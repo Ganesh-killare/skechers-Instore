@@ -1,0 +1,7 @@
+<ByPassScreenRequest>
+	<POSID>01</POSID>
+	<ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+	<ByPassReason>Cancel from POS</ByPassReason>
+	<ClerkID>0</ClerkID>
+	  <ByPassOptions>0</ByPassOptions>
+</ByPassScreenRequest>

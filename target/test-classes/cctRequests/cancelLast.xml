@@ -1,0 +1,13 @@
+<CancelLastTransRequest>
+  <POSID>01</POSID>
+  <APPID>02</APPID>
+  <CCTID>06</CCTID>
+  <ADSDKSpecVer>6.10</ADSDKSpecVer>
+  <ClerkID>111</ClerkID>
+  <TransactionType>76</TransactionType>
+  <AurusPayTicketNum></AurusPayTicketNum>
+  <TransactionIdentifier></TransactionIdentifier>
+  <Date>04012024</Date>
+  <Time>112748</Time>
+  <MidVoidReason></MidVoidReason>
+</CancelLastTransRequest>

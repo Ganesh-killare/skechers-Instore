@@ -1,0 +1,22 @@
+<CloseTransactionRequest>
+  <POSID>01</POSID>
+  <APPID>02</APPID>
+  <CCTID>06</CCTID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <ClerkID>111</ClerkID>
+  <CloseReasonCode>TRANSACTION_COMPLETE</CloseReasonCode>
+  <OrigAurusPayTicketNum></OrigAurusPayTicketNum>
+  <OrigTransactionIdentifier></OrigTransactionIdentifier>
+  <EndWIC>0</EndWIC>
+  <ProcessingMode>0</ProcessingMode>
+  <SessionId>12345</SessionId>
+  <LanguageIndicator>00</LanguageIndicator>
+  <InvoiceNumber></InvoiceNumber>
+  <TransactionDate>03212024</TransactionDate>
+  <TransactionTime>061235</TransactionTime>
+  <ECOMMInfo>
+    <MerchantIdentifier>100000017636</MerchantIdentifier>
+    <StoreID>90001</StoreID>
+    <TerminalID>93887867</TerminalID>
+  </ECOMMInfo>
+</CloseTransactionRequest>

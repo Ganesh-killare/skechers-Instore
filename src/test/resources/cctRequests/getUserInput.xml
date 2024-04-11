@@ -1,0 +1,15 @@
+<GetUserInputRequest>
+	<POSID>01</POSID>
+	<ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+	<HeaderText>Please Enter ROHINI'S Number </HeaderText>
+	<MessageLine1 />
+	<ButtonText1>OK</ButtonText1>
+	<ButtonText2>Cancel</ButtonText2>
+	<ButtonText3 />
+	<MinInputLimit>10</MinInputLimit>
+	<MaxInputLimit>10</MaxInputLimit>
+	<Format>0</Format>
+	<ScreenTimeOut>240</ScreenTimeOut>
+	<AllowCancel>1</AllowCancel>
+	<Type>2</Type>
+</GetUserInputRequest>
