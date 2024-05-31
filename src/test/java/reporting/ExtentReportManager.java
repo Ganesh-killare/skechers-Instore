@@ -2,8 +2,6 @@ package reporting;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
-import java.util.function.Function;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.markuputils.CodeLanguage;

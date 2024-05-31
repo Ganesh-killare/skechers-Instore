@@ -1,0 +1,2958 @@
+2024-04-17 14:23:03 INFO  Logger:9 - <CCTTicketDisplayRequest>
+  <POSID>01</POSID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <DisplayFlag>07</DisplayFlag>
+  <AllowCardReader>N</AllowCardReader>
+  <TransTotalDiscountAmt>3.00</TransTotalDiscountAmt>
+  <TransTotalQuantity>0</TransTotalQuantity>
+  <TaxAmount>2.00</TaxAmount>
+  <ServicesTotalAmount nil="true" />
+  <TransTotalAmount>14.00</TransTotalAmount>
+  <TicketProductData>
+    <TicketCount>1</TicketCount>
+    <Tickets>
+      <Ticket>
+        <TicketNumber>0000120240417142300235</TicketNumber>
+        <ProductCount>9</ProductCount>
+        <Products>
+          <Product>
+            <ProductID>1</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Dolorem dolor doloribus voluptates.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>2</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Dolor libero et molestiae.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>3</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Necessitatibus commodi occaecati possimus saepe impedit quo deserunt.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>4</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Eum sunt corrupti consequatur est ut et.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>5</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Perferendis est voluptas vel.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>6</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Repudiandae quia facilis.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>7</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Minima consectetur ut.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>8</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Ipsa architecto dolores et recusandae soluta voluptatibus magnam.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>9</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Atque et qui dolore.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+        </Products>
+      </Ticket>
+    </Tickets>
+  </TicketProductData>
+</CCTTicketDisplayRequest>
+
+2024-04-17 14:23:03 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<CCTTicketDisplayResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <ResponseCode>00000</ResponseCode>
+  <ResponseText>Approved</ResponseText>
+</CCTTicketDisplayResponse>
+
+2024-04-17 14:23:07 INFO  Logger:9 - <GetCardBINRequest>
+	<POSID>01</POSID>
+	<ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+	<LookUpFlag>4</LookUpFlag>
+	<AllowKeyedEntry>N</AllowKeyedEntry>
+	<AllowManualFallback>N</AllowManualFallback>
+	<CardDataSource>0</CardDataSource>
+	<TenderAmount>14.00</TenderAmount>
+	<TransactionType>01</TransactionType>
+	<PromptConfirmFlag>1</PromptConfirmFlag>
+	<ProcessingMode>0</ProcessingMode>
+	<CustomerInfoValidation />
+</GetCardBINRequest>
+
+2024-04-17 14:23:07 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<GetCardBINResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <ResponseCode>00000</ResponseCode>
+  <ResponseText>APPROVAL</ResponseText>
+  <KI />
+  <KIType />
+  <CardType>VIC</CardType>
+  <CardToken>4761731111120011</CardToken>
+  <CardEntryMode>T</CardEntryMode>
+  <CardDataSource />
+  <CardTokenDetailData />
+  <CardExpiryDate>1224</CardExpiryDate>
+  <CustomerInfoValidationResult>000000</CustomerInfoValidationResult>
+  <CustomerIdentifier />
+  <ECOMMInfo />
+  <DCCOffered>0</DCCOffered>
+  <FleetPromptsFlag />
+  <LoyaltyPassData />
+  <FallbackIndicator>0</FallbackIndicator>
+</GetCardBINResponse>
+
+2024-04-17 14:23:19 INFO  Logger:9 - <TransRequest>
+  <POSID>01</POSID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <CardToken>4761731111120011</CardToken>
+  <CardPresent>Y</CardPresent>
+  <PurchaserPresent>Y</PurchaserPresent>
+  <EntrySource />
+  <KeyedEntryAVSFlag>N</KeyedEntryAVSFlag>
+  <GiftPurchaseAuthIndicator>N</GiftPurchaseAuthIndicator>
+  <EcommerceIndicator>N</EcommerceIndicator>
+  <EnableNFCReader>N</EnableNFCReader>
+  <CashBackFlag>0</CashBackFlag>
+  <CVBFlag>0</CVBFlag>
+  <ProcessingMode>0</ProcessingMode>
+  <ProcessCardFlag>0</ProcessCardFlag>
+  <TransAmountDetails>
+    <ProductTotalAmount>12.00</ProductTotalAmount>
+    <TaxAmount>2.00</TaxAmount>
+    <TenderAmount>14.00</TenderAmount>
+    <TransactionTotal>14.00~14.00</TransactionTotal>
+  </TransAmountDetails>
+  <TransactionType>01</TransactionType>
+  <ReferenceNumber>157892</ReferenceNumber>
+  <TaxExemptFlag>N</TaxExemptFlag>
+  <SubTransType />
+  <CurrencyCode>840</CurrencyCode>
+  <DCCOffered>0</DCCOffered>
+  <TransactionDate>04172024</TransactionDate>
+  <TransactionTime>142308</TransactionTime>
+  <TipEligible>0</TipEligible>
+  <AmountNoBar>0</AmountNoBar>
+  <SignatureFlag>N</SignatureFlag>
+  <IsTokenizedTransaction>0</IsTokenizedTransaction>
+  <PartialAllowed>0</PartialAllowed>
+  <PLCCPaymentMethod />
+</TransRequest>
+
+2024-04-17 14:23:19 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<TransResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <TransDetailsData>
+    <TransDetailData>
+      <CardNumber>476173XXXXXX0011</CardNumber>
+      <CardType>VIC</CardType>
+      <TransactionTypeCode>1</TransactionTypeCode>
+      <CardEntryMode>T</CardEntryMode>
+      <KI />
+      <KIType />
+      <TransactionAmount>14.00</TransactionAmount>
+      <TipAmount>0.00</TipAmount>
+      <TransactionIdentifier>192241081760843548</TransactionIdentifier>
+      <ResponseCode>00000</ResponseCode>
+      <ResponseText>APPROVAL</ResponseText>
+      <ApprovalCode>175679</ApprovalCode>
+      <BalanceAmount>0.00</BalanceAmount>
+      <AuthAVSResult>U</AuthAVSResult>
+      <TransactionSequenceNumber>000002</TransactionSequenceNumber>
+      <CardExpiryDate>1224</CardExpiryDate>
+      <CustomerName />
+      <CustomerTokenNumber>1369171680520011</CustomerTokenNumber>
+      <SignatureReceiptFlag>1</SignatureReceiptFlag>
+      <PartialApprovedFlag>N</PartialApprovedFlag>
+      <EMVFlag>1</EMVFlag>
+      <EMVData>[FS]MerchantID~313306264885[FS]TerminalID~[FS]ARC~00[FS]ISO~00[FS]AID~A0000000031010[FS]TVR~0000000000[FS]TSI~[FS]IAD~06010A03A00000[FS]App Pref Name~[FS]App Label~VISA CREDIT[FS]RespDate~04172024[FS]RespTime~045328</EMVData>
+      <AdditionalReceiptInfo>
+        <Line>AMOUNT: 14.00</Line>
+        <Line>CARD:VISA CREDIT XXXX0011 CTLS EMV</Line>
+        <Line>APPROVAL CODE:175679</Line>
+        <Line>AID:A0000000031010</Line>
+        <Line>TVR:0000000000</Line>
+        <Line>IAD:06010A03A00000</Line>
+        <Line>TSI:</Line>
+        <Line>ARC:00</Line>
+        <Line>APPLICATION CRYPTOGRAM:010EAE949FE7CD96</Line>
+        <Line>APPLICATION PREFERRED NAME:</Line>
+        <Line>APPLICATION LABEL:VISA CREDIT</Line>
+        <Line>Response Code:000</Line>
+        <Line>REFERENCE NUMBER:157892</Line>
+      </AdditionalReceiptInfo>
+      <VoidData />
+      <LoyaltyInfo>
+        <Usepoints />
+        <BalancePoint />
+        <Expiry />
+        <LoyaltyLevel />
+      </LoyaltyInfo>
+      <ReferralNUM />
+      <ReferralDialInformation />
+      <OpenToPayCash />
+      <OpenToBuy />
+      <LastPaymentDate />
+      <LastPaymentAmount />
+      <ProcessorResponseCode>000</ProcessorResponseCode>
+      <GiftCardTypePassCode />
+      <ProcessorMerchantId />
+      <ForcedComplianceCode />
+      <CardIdentifier />
+      <TransactionToken />
+      <ReceiptToken>4761731111120011</ReceiptToken>
+      <CorpCardToken />
+      <EcomToken />
+      <EcomResponseCode />
+      <EcomResponseText />
+      <CRMToken>1369171680520011</CRMToken>
+      <ProcessorToken>1369171680520011</ProcessorToken>
+      <FraudScoreInfo>
+        <RequestToken />
+      </FraudScoreInfo>
+      <ECOMMInfo>
+        <OneOrderToken />
+        <CVVResult>0</CVVResult>
+      </ECOMMInfo>
+      <DCCDetails>
+        <DCCOffered>0</DCCOffered>
+      </DCCDetails>
+      <CashbackAmount>0.00</CashbackAmount>
+      <LanguageIndicator>00</LanguageIndicator>
+      <TotalApprovedAmount>14.00</TotalApprovedAmount>
+      <FallbackIndicator>0</FallbackIndicator>
+      <EMVDataInTLVFormat>AID%7EA0000000031010%1ETVR%7E0000000000%1EIAD%7E06010A03A00000%1E%1EARC%7E3030</EMVDataInTLVFormat>
+      <PromotionCode />
+      <CardClass />
+      <BillingAddress />
+      <EPPDetailsInfo />
+      <Reserved1 />
+      <Reserved2 />
+      <CheckInfo />
+      <ReceiptDetails>
+        <ReceiptData>
+          <LanguageIndicator>00</LanguageIndicator>
+          <ReceiptInfo>
+            <Line>AMOUNT:14.00</Line>
+            <Line>CARD:VISA CREDIT XXXX0011 CTLS EMV</Line>
+            <Line>APPROVAL CODE:175679</Line>
+            <Line>AID:A0000000031010</Line>
+            <Line>TVR:0000000000</Line>
+            <Line>IAD:06010A03A00000</Line>
+            <Line>TSI:</Line>
+            <Line>ARC:00</Line>
+            <Line>APPLICATION CRYPTOGRAM:010EAE949FE7CD96</Line>
+            <Line>APPLICATION PREFERRED NAME:</Line>
+            <Line>APPLICATION LABEL:VISA CREDIT</Line>
+            <Line>Response Code:000</Line>
+            <Line>REFERENCE NUMBER:157892</Line>
+          </ReceiptInfo>
+        </ReceiptData>
+      </ReceiptDetails>
+    </TransDetailData>
+  </TransDetailsData>
+  <BatchNumber>108001</BatchNumber>
+  <AurusPayTicketNum>224108176084367149</AurusPayTicketNum>
+  <AdditionalTags>
+    <Tags>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+    </Tags>
+  </AdditionalTags>
+</TransResponse>
+
+2024-04-17 14:23:32 INFO  Logger:9 - <TransRequest>
+  <POSID>01</POSID>
+  <APPID>04</APPID>
+  <CCTID>06</CCTID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <CardPresent>Y</CardPresent>
+  <PurchaserPresent>Y</PurchaserPresent>
+  <EntrySource />
+  <KeyedEntryAVSFlag>N</KeyedEntryAVSFlag>
+  <GiftPurchaseAuthIndicator>N</GiftPurchaseAuthIndicator>
+  <EcommerceIndicator>N</EcommerceIndicator>
+  <EnableNFCReader>N</EnableNFCReader>
+  <CashBackFlag>0</CashBackFlag>
+  <CVBFlag>0</CVBFlag>
+  <ProcessingMode>0</ProcessingMode>
+  <ProcessCardFlag>0</ProcessCardFlag>
+  <TransAmountDetails>
+    <ProductTotalAmount>12.00</ProductTotalAmount>
+    <TaxAmount>2.00</TaxAmount>
+    <TenderAmount>14.00</TenderAmount>
+    <TransactionTotal>14.00~14.00</TransactionTotal>
+  </TransAmountDetails>
+  <TransactionType>02</TransactionType>
+  <ReferenceNumber>122185</ReferenceNumber>
+  <TaxExemptFlag>N</TaxExemptFlag>
+  <OrigAurusPayTicketNum>224108176084367149</OrigAurusPayTicketNum>
+  <OrigTransactionIdentifier>192241081760843548</OrigTransactionIdentifier>
+  <SubTransType />
+  <CurrencyCode>840</CurrencyCode>
+  <DCCOffered>0</DCCOffered>
+  <ClerkID />
+  <TransactionDate>04172024</TransactionDate>
+  <TransactionTime>142319</TransactionTime>
+  <TipEligible>0</TipEligible>
+  <AmountNoBar>0</AmountNoBar>
+  <SignatureFlag>N</SignatureFlag>
+  <IsTokenizedTransaction>0</IsTokenizedTransaction>
+  <PartialAllowed>0</PartialAllowed>
+  <PLCCPaymentMethod />
+</TransRequest>
+
+2024-04-17 14:23:32 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<TransResponse>
+  <POSID>01</POSID>
+  <APPID>04</APPID>
+  <CCTID>06</CCTID>
+  <TransDetailsData>
+    <TransDetailData>
+      <CardNumber>476173XXXXXX0011</CardNumber>
+      <CardType>VIC</CardType>
+      <TransactionTypeCode>2</TransactionTypeCode>
+      <CardEntryMode>K</CardEntryMode>
+      <KI />
+      <KIType />
+      <TransactionAmount>14.00</TransactionAmount>
+      <TipAmount>0.00</TipAmount>
+      <TransactionIdentifier>191241081762437785</TransactionIdentifier>
+      <ResponseCode>00000</ResponseCode>
+      <ResponseText>APPROVAL</ResponseText>
+      <ApprovalCode>000000</ApprovalCode>
+      <BalanceAmount>0.00</BalanceAmount>
+      <AuthAVSResult />
+      <TransactionSequenceNumber>000001</TransactionSequenceNumber>
+      <CardExpiryDate>1224</CardExpiryDate>
+      <CustomerName />
+      <CustomerTokenNumber>1369171680520011</CustomerTokenNumber>
+      <SignatureReceiptFlag>1</SignatureReceiptFlag>
+      <PartialApprovedFlag>N</PartialApprovedFlag>
+      <EMVFlag>0</EMVFlag>
+      <EMVData />
+      <AdditionalReceiptInfo>
+        <Line>AMOUNT: 14.00</Line>
+        <Line>CARD:VISA CREDIT XXXX0011 KEYED</Line>
+        <Line>APPROVAL CODE:000000</Line>
+        <Line>Response Code:000</Line>
+        <Line>REFERENCE NUMBER:122185</Line>
+      </AdditionalReceiptInfo>
+      <VoidData />
+      <LoyaltyInfo>
+        <Usepoints />
+        <BalancePoint />
+        <Expiry />
+        <LoyaltyLevel />
+      </LoyaltyInfo>
+      <ReferralNUM />
+      <ReferralDialInformation />
+      <OpenToPayCash />
+      <OpenToBuy />
+      <LastPaymentDate />
+      <LastPaymentAmount />
+      <ProcessorResponseCode>000</ProcessorResponseCode>
+      <GiftCardTypePassCode />
+      <ProcessorMerchantId />
+      <ForcedComplianceCode />
+      <CardIdentifier />
+      <TransactionToken />
+      <ReceiptToken>4761731111120011</ReceiptToken>
+      <CorpCardToken />
+      <EcomToken />
+      <EcomResponseCode />
+      <EcomResponseText />
+      <CRMToken>1369171680520011</CRMToken>
+      <ProcessorToken>1369171680520011</ProcessorToken>
+      <FraudScoreInfo>
+        <RequestToken />
+      </FraudScoreInfo>
+      <ECOMMInfo>
+        <OneOrderToken />
+        <CVVResult>0</CVVResult>
+      </ECOMMInfo>
+      <DCCDetails>
+        <DCCOffered>0</DCCOffered>
+      </DCCDetails>
+      <CashbackAmount>0.00</CashbackAmount>
+      <LanguageIndicator>00</LanguageIndicator>
+      <TotalApprovedAmount>14.00</TotalApprovedAmount>
+      <FallbackIndicator>0</FallbackIndicator>
+      <PromotionCode />
+      <CardClass />
+      <BillingAddress />
+      <EPPDetailsInfo />
+      <Reserved1 />
+      <Reserved2 />
+      <CheckInfo />
+      <ReceiptDetails>
+        <ReceiptData>
+          <LanguageIndicator>00</LanguageIndicator>
+          <ReceiptInfo>
+            <Line>AMOUNT:14.00</Line>
+            <Line>CARD:VISA CREDIT XXXX0011 KEYED</Line>
+            <Line>APPROVAL CODE:000000</Line>
+            <Line>Response Code:000</Line>
+            <Line>REFERENCE NUMBER:122185</Line>
+          </ReceiptInfo>
+        </ReceiptData>
+      </ReceiptDetails>
+    </TransDetailData>
+  </TransDetailsData>
+  <BatchNumber>108001</BatchNumber>
+  <AurusPayTicketNum>124108176243777257</AurusPayTicketNum>
+  <AdditionalTags>
+    <Tags>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+    </Tags>
+  </AdditionalTags>
+</TransResponse>
+
+2024-04-17 14:24:03 INFO  Logger:9 - <CCTTicketDisplayRequest>
+  <POSID>01</POSID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <DisplayFlag>07</DisplayFlag>
+  <AllowCardReader>N</AllowCardReader>
+  <TransTotalDiscountAmt>15.00</TransTotalDiscountAmt>
+  <TransTotalQuantity>0</TransTotalQuantity>
+  <TaxAmount>12.00</TaxAmount>
+  <ServicesTotalAmount nil="true" />
+  <TransTotalAmount>72.00</TransTotalAmount>
+  <TicketProductData>
+    <TicketCount>1</TicketCount>
+    <Tickets>
+      <Ticket>
+        <TicketNumber>0000120240417142400898</TicketNumber>
+        <ProductCount>9</ProductCount>
+        <Products>
+          <Product>
+            <ProductID>1</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Facilis esse nihil.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>2</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Doloribus voluptatem iste delectus beatae.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>3</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Laborum eius et deserunt.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>4</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Sapiente odit dolores maxime aut et assumenda in.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>5</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Illo amet saepe fugiat labore fugiat.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>6</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Quisquam sed doloribus cum error voluptas et.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>7</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Sunt sunt officia nobis repudiandae aspernatur.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>8</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Molestiae ut quasi quia possimus.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>9</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Quo ad accusantium ea qui non aliquid ipsum.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+        </Products>
+      </Ticket>
+    </Tickets>
+  </TicketProductData>
+</CCTTicketDisplayRequest>
+
+2024-04-17 14:24:03 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<CCTTicketDisplayResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <ResponseCode>00000</ResponseCode>
+  <ResponseText>Approved</ResponseText>
+</CCTTicketDisplayResponse>
+
+2024-04-17 14:24:07 INFO  Logger:9 - <GetCardBINRequest>
+	<POSID>01</POSID>
+	<ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+	<LookUpFlag>4</LookUpFlag>
+	<AllowKeyedEntry>N</AllowKeyedEntry>
+	<AllowManualFallback>N</AllowManualFallback>
+	<CardDataSource>0</CardDataSource>
+	<TenderAmount>72.00</TenderAmount>
+	<TransactionType>01</TransactionType>
+	<PromptConfirmFlag>1</PromptConfirmFlag>
+	<ProcessingMode>0</ProcessingMode>
+	<CustomerInfoValidation />
+</GetCardBINRequest>
+
+2024-04-17 14:24:07 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<GetCardBINResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <ResponseCode>00000</ResponseCode>
+  <ResponseText>APPROVAL</ResponseText>
+  <KI />
+  <KIType />
+  <CardType>VIC</CardType>
+  <CardToken>4761731111120011</CardToken>
+  <CardEntryMode>T</CardEntryMode>
+  <CardDataSource />
+  <CardTokenDetailData />
+  <CardExpiryDate>1224</CardExpiryDate>
+  <CustomerInfoValidationResult>000000</CustomerInfoValidationResult>
+  <CustomerIdentifier />
+  <ECOMMInfo />
+  <DCCOffered>0</DCCOffered>
+  <FleetPromptsFlag />
+  <LoyaltyPassData />
+  <FallbackIndicator>0</FallbackIndicator>
+</GetCardBINResponse>
+
+2024-04-17 14:24:23 INFO  Logger:9 - <TransRequest>
+  <POSID>01</POSID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <CardToken>4761731111120011</CardToken>
+  <CardPresent>Y</CardPresent>
+  <PurchaserPresent>Y</PurchaserPresent>
+  <EntrySource />
+  <KeyedEntryAVSFlag>N</KeyedEntryAVSFlag>
+  <GiftPurchaseAuthIndicator>N</GiftPurchaseAuthIndicator>
+  <EcommerceIndicator>N</EcommerceIndicator>
+  <EnableNFCReader>N</EnableNFCReader>
+  <CashBackFlag>0</CashBackFlag>
+  <CVBFlag>0</CVBFlag>
+  <ProcessingMode>0</ProcessingMode>
+  <ProcessCardFlag>0</ProcessCardFlag>
+  <TransAmountDetails>
+    <ProductTotalAmount>60.00</ProductTotalAmount>
+    <TaxAmount>12.00</TaxAmount>
+    <TenderAmount>72.00</TenderAmount>
+    <TransactionTotal>72.00~72.00</TransactionTotal>
+  </TransAmountDetails>
+  <TransactionType>01</TransactionType>
+  <ReferenceNumber>157892</ReferenceNumber>
+  <TaxExemptFlag>N</TaxExemptFlag>
+  <SubTransType />
+  <CurrencyCode>840</CurrencyCode>
+  <DCCOffered>0</DCCOffered>
+  <TransactionDate>04172024</TransactionDate>
+  <TransactionTime>142407</TransactionTime>
+  <TipEligible>0</TipEligible>
+  <AmountNoBar>0</AmountNoBar>
+  <SignatureFlag>N</SignatureFlag>
+  <IsTokenizedTransaction>0</IsTokenizedTransaction>
+  <PartialAllowed>0</PartialAllowed>
+  <PLCCPaymentMethod />
+</TransRequest>
+
+2024-04-17 14:24:23 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<TransResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <TransDetailsData>
+    <TransDetailData>
+      <CardNumber>476173XXXXXX0011</CardNumber>
+      <CardType>VIC</CardType>
+      <TransactionTypeCode>1</TransactionTypeCode>
+      <CardEntryMode>T</CardEntryMode>
+      <KI />
+      <KIType />
+      <TransactionAmount>72.00</TransactionAmount>
+      <TipAmount>0.00</TipAmount>
+      <TransactionIdentifier>191241081767340115</TransactionIdentifier>
+      <ResponseCode>00000</ResponseCode>
+      <ResponseText>APPROVAL</ResponseText>
+      <ApprovalCode>492377</ApprovalCode>
+      <BalanceAmount>0.00</BalanceAmount>
+      <AuthAVSResult>U</AuthAVSResult>
+      <TransactionSequenceNumber>000002</TransactionSequenceNumber>
+      <CardExpiryDate>1224</CardExpiryDate>
+      <CustomerName />
+      <CustomerTokenNumber>1369171680520011</CustomerTokenNumber>
+      <SignatureReceiptFlag>1</SignatureReceiptFlag>
+      <PartialApprovedFlag>N</PartialApprovedFlag>
+      <EMVFlag>1</EMVFlag>
+      <EMVData>[FS]MerchantID~313306264885[FS]TerminalID~[FS]ARC~00[FS]ISO~00[FS]AID~A0000000031010[FS]TVR~0000000000[FS]TSI~[FS]IAD~06010A03A00000[FS]App Pref Name~[FS]App Label~VISA CREDIT[FS]RespDate~04172024[FS]RespTime~045433</EMVData>
+      <AdditionalReceiptInfo>
+        <Line>AMOUNT: 72.00</Line>
+        <Line>CARD:VISA CREDIT XXXX0011 CTLS EMV</Line>
+        <Line>APPROVAL CODE:492377</Line>
+        <Line>AID:A0000000031010</Line>
+        <Line>TVR:0000000000</Line>
+        <Line>IAD:06010A03A00000</Line>
+        <Line>TSI:</Line>
+        <Line>ARC:00</Line>
+        <Line>APPLICATION CRYPTOGRAM:C0204FB6760667EC</Line>
+        <Line>APPLICATION PREFERRED NAME:</Line>
+        <Line>APPLICATION LABEL:VISA CREDIT</Line>
+        <Line>Response Code:000</Line>
+        <Line>REFERENCE NUMBER:157892</Line>
+      </AdditionalReceiptInfo>
+      <VoidData />
+      <LoyaltyInfo>
+        <Usepoints />
+        <BalancePoint />
+        <Expiry />
+        <LoyaltyLevel />
+      </LoyaltyInfo>
+      <ReferralNUM />
+      <ReferralDialInformation />
+      <OpenToPayCash />
+      <OpenToBuy />
+      <LastPaymentDate />
+      <LastPaymentAmount />
+      <ProcessorResponseCode>000</ProcessorResponseCode>
+      <GiftCardTypePassCode />
+      <ProcessorMerchantId />
+      <ForcedComplianceCode />
+      <CardIdentifier />
+      <TransactionToken />
+      <ReceiptToken>4761731111120011</ReceiptToken>
+      <CorpCardToken />
+      <EcomToken />
+      <EcomResponseCode />
+      <EcomResponseText />
+      <CRMToken>1369171680520011</CRMToken>
+      <ProcessorToken>1369171680520011</ProcessorToken>
+      <FraudScoreInfo>
+        <RequestToken />
+      </FraudScoreInfo>
+      <ECOMMInfo>
+        <OneOrderToken />
+        <CVVResult>0</CVVResult>
+      </ECOMMInfo>
+      <DCCDetails>
+        <DCCOffered>0</DCCOffered>
+      </DCCDetails>
+      <CashbackAmount>0.00</CashbackAmount>
+      <LanguageIndicator>00</LanguageIndicator>
+      <TotalApprovedAmount>72.00</TotalApprovedAmount>
+      <FallbackIndicator>0</FallbackIndicator>
+      <EMVDataInTLVFormat>AID%7EA0000000031010%1ETVR%7E0000000000%1EIAD%7E06010A03A00000%1E%1EARC%7E3030</EMVDataInTLVFormat>
+      <PromotionCode />
+      <CardClass />
+      <BillingAddress />
+      <EPPDetailsInfo />
+      <Reserved1 />
+      <Reserved2 />
+      <CheckInfo />
+      <ReceiptDetails>
+        <ReceiptData>
+          <LanguageIndicator>00</LanguageIndicator>
+          <ReceiptInfo>
+            <Line>AMOUNT:72.00</Line>
+            <Line>CARD:VISA CREDIT XXXX0011 CTLS EMV</Line>
+            <Line>APPROVAL CODE:492377</Line>
+            <Line>AID:A0000000031010</Line>
+            <Line>TVR:0000000000</Line>
+            <Line>IAD:06010A03A00000</Line>
+            <Line>TSI:</Line>
+            <Line>ARC:00</Line>
+            <Line>APPLICATION CRYPTOGRAM:C0204FB6760667EC</Line>
+            <Line>APPLICATION PREFERRED NAME:</Line>
+            <Line>APPLICATION LABEL:VISA CREDIT</Line>
+            <Line>Response Code:000</Line>
+            <Line>REFERENCE NUMBER:157892</Line>
+          </ReceiptInfo>
+        </ReceiptData>
+      </ReceiptDetails>
+    </TransDetailData>
+  </TransDetailsData>
+  <BatchNumber>108001</BatchNumber>
+  <AurusPayTicketNum>124108176734027263</AurusPayTicketNum>
+  <AdditionalTags>
+    <Tags>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+    </Tags>
+  </AdditionalTags>
+</TransResponse>
+
+2024-04-17 14:24:29 INFO  Logger:9 - <TransRequest>
+  <POSID>01</POSID>
+  <APPID>04</APPID>
+  <CCTID>06</CCTID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <CardPresent>Y</CardPresent>
+  <PurchaserPresent>Y</PurchaserPresent>
+  <EntrySource />
+  <KeyedEntryAVSFlag>N</KeyedEntryAVSFlag>
+  <GiftPurchaseAuthIndicator>N</GiftPurchaseAuthIndicator>
+  <EcommerceIndicator>N</EcommerceIndicator>
+  <EnableNFCReader>N</EnableNFCReader>
+  <CashBackFlag>0</CashBackFlag>
+  <CVBFlag>0</CVBFlag>
+  <ProcessingMode>0</ProcessingMode>
+  <ProcessCardFlag>0</ProcessCardFlag>
+  <TransAmountDetails>
+    <ProductTotalAmount>60.00</ProductTotalAmount>
+    <TaxAmount>12.00</TaxAmount>
+    <TenderAmount>72.00</TenderAmount>
+    <TransactionTotal>72.00~72.00</TransactionTotal>
+  </TransAmountDetails>
+  <TransactionType>02</TransactionType>
+  <ReferenceNumber>122185</ReferenceNumber>
+  <TaxExemptFlag>N</TaxExemptFlag>
+  <OrigAurusPayTicketNum>124108176734027263</OrigAurusPayTicketNum>
+  <OrigTransactionIdentifier>191241081767340115</OrigTransactionIdentifier>
+  <SubTransType />
+  <CurrencyCode>840</CurrencyCode>
+  <DCCOffered>0</DCCOffered>
+  <ClerkID />
+  <TransactionDate>04172024</TransactionDate>
+  <TransactionTime>142423</TransactionTime>
+  <TipEligible>0</TipEligible>
+  <AmountNoBar>0</AmountNoBar>
+  <SignatureFlag>N</SignatureFlag>
+  <IsTokenizedTransaction>0</IsTokenizedTransaction>
+  <PartialAllowed>0</PartialAllowed>
+  <PLCCPaymentMethod />
+</TransRequest>
+
+2024-04-17 14:24:29 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<TransResponse>
+  <POSID>01</POSID>
+  <APPID>04</APPID>
+  <CCTID>06</CCTID>
+  <TransDetailsData>
+    <TransDetailData>
+      <CardNumber>476173XXXXXX0011</CardNumber>
+      <CardType>VIC</CardType>
+      <TransactionTypeCode>2</TransactionTypeCode>
+      <CardEntryMode>K</CardEntryMode>
+      <KI />
+      <KIType />
+      <TransactionAmount>72.00</TransactionAmount>
+      <TipAmount>0.00</TipAmount>
+      <TransactionIdentifier>191241081768132318</TransactionIdentifier>
+      <ResponseCode>00000</ResponseCode>
+      <ResponseText>APPROVAL</ResponseText>
+      <ApprovalCode>000000</ApprovalCode>
+      <BalanceAmount>0.00</BalanceAmount>
+      <AuthAVSResult />
+      <TransactionSequenceNumber>000003</TransactionSequenceNumber>
+      <CardExpiryDate>1224</CardExpiryDate>
+      <CustomerName />
+      <CustomerTokenNumber>1369171680520011</CustomerTokenNumber>
+      <SignatureReceiptFlag>1</SignatureReceiptFlag>
+      <PartialApprovedFlag>N</PartialApprovedFlag>
+      <EMVFlag>0</EMVFlag>
+      <EMVData />
+      <AdditionalReceiptInfo>
+        <Line>AMOUNT: 72.00</Line>
+        <Line>CARD:VISA CREDIT XXXX0011 KEYED</Line>
+        <Line>APPROVAL CODE:000000</Line>
+        <Line>Response Code:000</Line>
+        <Line>REFERENCE NUMBER:122185</Line>
+      </AdditionalReceiptInfo>
+      <VoidData />
+      <LoyaltyInfo>
+        <Usepoints />
+        <BalancePoint />
+        <Expiry />
+        <LoyaltyLevel />
+      </LoyaltyInfo>
+      <ReferralNUM />
+      <ReferralDialInformation />
+      <OpenToPayCash />
+      <OpenToBuy />
+      <LastPaymentDate />
+      <LastPaymentAmount />
+      <ProcessorResponseCode>000</ProcessorResponseCode>
+      <GiftCardTypePassCode />
+      <ProcessorMerchantId />
+      <ForcedComplianceCode />
+      <CardIdentifier />
+      <TransactionToken />
+      <ReceiptToken>4761731111120011</ReceiptToken>
+      <CorpCardToken />
+      <EcomToken />
+      <EcomResponseCode />
+      <EcomResponseText />
+      <CRMToken>1369171680520011</CRMToken>
+      <ProcessorToken>1369171680520011</ProcessorToken>
+      <FraudScoreInfo>
+        <RequestToken />
+      </FraudScoreInfo>
+      <ECOMMInfo>
+        <OneOrderToken />
+        <CVVResult>0</CVVResult>
+      </ECOMMInfo>
+      <DCCDetails>
+        <DCCOffered>0</DCCOffered>
+      </DCCDetails>
+      <CashbackAmount>0.00</CashbackAmount>
+      <LanguageIndicator>00</LanguageIndicator>
+      <TotalApprovedAmount>72.00</TotalApprovedAmount>
+      <FallbackIndicator>0</FallbackIndicator>
+      <PromotionCode />
+      <CardClass />
+      <BillingAddress />
+      <EPPDetailsInfo />
+      <Reserved1 />
+      <Reserved2 />
+      <CheckInfo />
+      <ReceiptDetails>
+        <ReceiptData>
+          <LanguageIndicator>00</LanguageIndicator>
+          <ReceiptInfo>
+            <Line>AMOUNT:72.00</Line>
+            <Line>CARD:VISA CREDIT XXXX0011 KEYED</Line>
+            <Line>APPROVAL CODE:000000</Line>
+            <Line>Response Code:000</Line>
+            <Line>REFERENCE NUMBER:122185</Line>
+          </ReceiptInfo>
+        </ReceiptData>
+      </ReceiptDetails>
+    </TransDetailData>
+  </TransDetailsData>
+  <BatchNumber>108001</BatchNumber>
+  <AurusPayTicketNum>124108176813237264</AurusPayTicketNum>
+  <AdditionalTags>
+    <Tags>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+    </Tags>
+  </AdditionalTags>
+</TransResponse>
+
+2024-04-17 14:24:35 INFO  Logger:9 - <CCTTicketDisplayRequest>
+  <POSID>01</POSID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <DisplayFlag>07</DisplayFlag>
+  <AllowCardReader>N</AllowCardReader>
+  <TransTotalDiscountAmt>7.00</TransTotalDiscountAmt>
+  <TransTotalQuantity>0</TransTotalQuantity>
+  <TaxAmount>5.00</TaxAmount>
+  <ServicesTotalAmount nil="true" />
+  <TransTotalAmount>34.00</TransTotalAmount>
+  <TicketProductData>
+    <TicketCount>1</TicketCount>
+    <Tickets>
+      <Ticket>
+        <TicketNumber>0000120240417142431981</TicketNumber>
+        <ProductCount>9</ProductCount>
+        <Products>
+          <Product>
+            <ProductID>1</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Ex omnis eaque.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>2</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Autem velit architecto eum saepe.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>3</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Qui temporibus fuga occaecati quia.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>4</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Modi cupiditate dolorum unde aut repellat voluptas.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>5</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Vero molestiae qui sint.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>6</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Aperiam itaque est tempore.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>7</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Sint voluptatum occaecati.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>8</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Aut est sint voluptatem doloribus fugiat rerum illo.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>9</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Quas vitae beatae omnis dolores modi.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+        </Products>
+      </Ticket>
+    </Tickets>
+  </TicketProductData>
+</CCTTicketDisplayRequest>
+
+2024-04-17 14:24:35 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<CCTTicketDisplayResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <ResponseCode>00000</ResponseCode>
+  <ResponseText>Approved</ResponseText>
+</CCTTicketDisplayResponse>
+
+2024-04-17 14:24:48 INFO  Logger:9 - <GetCardBINRequest>
+	<POSID>01</POSID>
+	<ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+	<LookUpFlag>4</LookUpFlag>
+	<AllowKeyedEntry>N</AllowKeyedEntry>
+	<AllowManualFallback>N</AllowManualFallback>
+	<CardDataSource>0</CardDataSource>
+	<TenderAmount>34.00</TenderAmount>
+	<TransactionType>01</TransactionType>
+	<PromptConfirmFlag>1</PromptConfirmFlag>
+	<ProcessingMode>0</ProcessingMode>
+	<CustomerInfoValidation />
+</GetCardBINRequest>
+
+2024-04-17 14:24:48 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<GetCardBINResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <ResponseCode>00000</ResponseCode>
+  <ResponseText>APPROVAL</ResponseText>
+  <KI />
+  <KIType />
+  <CardType>VIC</CardType>
+  <CardToken>4761731111120011</CardToken>
+  <CardEntryMode>I</CardEntryMode>
+  <CardDataSource />
+  <CardTokenDetailData />
+  <FirstName>Test Card 01</FirstName>
+  <LastName>UAT USA</LastName>
+  <CardExpiryDate>1224</CardExpiryDate>
+  <CustomerInfoValidationResult>000000</CustomerInfoValidationResult>
+  <CustomerIdentifier />
+  <Level3Capable>N</Level3Capable>
+  <ECOMMInfo />
+  <DCCOffered>0</DCCOffered>
+  <FleetPromptsFlag />
+  <LoyaltyPassData />
+  <FallbackIndicator>0</FallbackIndicator>
+</GetCardBINResponse>
+
+2024-04-17 14:25:04 INFO  Logger:9 - <TransRequest>
+  <POSID>01</POSID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <CardToken>4761731111120011</CardToken>
+  <CardPresent>Y</CardPresent>
+  <PurchaserPresent>Y</PurchaserPresent>
+  <EntrySource />
+  <KeyedEntryAVSFlag>N</KeyedEntryAVSFlag>
+  <GiftPurchaseAuthIndicator>N</GiftPurchaseAuthIndicator>
+  <EcommerceIndicator>N</EcommerceIndicator>
+  <EnableNFCReader>N</EnableNFCReader>
+  <CashBackFlag>0</CashBackFlag>
+  <CVBFlag>0</CVBFlag>
+  <ProcessingMode>0</ProcessingMode>
+  <ProcessCardFlag>0</ProcessCardFlag>
+  <TransAmountDetails>
+    <ProductTotalAmount>29.00</ProductTotalAmount>
+    <TaxAmount>5.00</TaxAmount>
+    <TenderAmount>34.00</TenderAmount>
+    <TransactionTotal>34.00~34.00</TransactionTotal>
+  </TransAmountDetails>
+  <TransactionType>01</TransactionType>
+  <ReferenceNumber>157892</ReferenceNumber>
+  <TaxExemptFlag>N</TaxExemptFlag>
+  <SubTransType />
+  <CurrencyCode>840</CurrencyCode>
+  <DCCOffered>0</DCCOffered>
+  <TransactionDate>04172024</TransactionDate>
+  <TransactionTime>142448</TransactionTime>
+  <TipEligible>0</TipEligible>
+  <AmountNoBar>0</AmountNoBar>
+  <SignatureFlag>N</SignatureFlag>
+  <IsTokenizedTransaction>0</IsTokenizedTransaction>
+  <PartialAllowed>0</PartialAllowed>
+  <PLCCPaymentMethod />
+</TransRequest>
+
+2024-04-17 14:25:04 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<TransResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <TransDetailsData>
+    <TransDetailData>
+      <CardNumber>476173XXXXXX0011</CardNumber>
+      <CardType>VIC</CardType>
+      <TransactionTypeCode>1</TransactionTypeCode>
+      <CardEntryMode>I</CardEntryMode>
+      <KI />
+      <KIType />
+      <TransactionAmount>34.00</TransactionAmount>
+      <TipAmount>0.00</TipAmount>
+      <TransactionIdentifier>191241081771633034</TransactionIdentifier>
+      <ResponseCode>00000</ResponseCode>
+      <ResponseText>APPROVAL</ResponseText>
+      <ApprovalCode>660646</ApprovalCode>
+      <BalanceAmount>0.00</BalanceAmount>
+      <AuthAVSResult>U</AuthAVSResult>
+      <TransactionSequenceNumber>000004</TransactionSequenceNumber>
+      <CardExpiryDate>1224</CardExpiryDate>
+      <CustomerName>UAT USA Test Card 01</CustomerName>
+      <CustomerTokenNumber>1369171680520011</CustomerTokenNumber>
+      <SignatureReceiptFlag>2</SignatureReceiptFlag>
+      <PartialApprovedFlag>N</PartialApprovedFlag>
+      <EMVFlag>1</EMVFlag>
+      <EMVData>[FS]MerchantID~313306264885[FS]TerminalID~[FS]ARC~00[FS]ISO~00[FS]AID~A0000000031010[FS]TVR~8000048000[FS]TSI~6800[FS]IAD~06010A03A0A800[FS]App Pref Name~Visa Credit[FS]App Label~VISA CREDIT[FS]RespDate~04172024[FS]RespTime~045516</EMVData>
+      <AdditionalReceiptInfo>
+        <Line>AMOUNT: 34.00</Line>
+        <Line>CARD:VISA CREDIT XXXX0011 EMV</Line>
+        <Line>APPROVAL CODE:660646</Line>
+        <Line>AID:A0000000031010</Line>
+        <Line>TVR:8000048000</Line>
+        <Line>IAD:06010A03A0A800</Line>
+        <Line>TSI:6800</Line>
+        <Line>ARC:00</Line>
+        <Line>APPLICATION CRYPTOGRAM:63DAA197BE534E93</Line>
+        <Line>APPLICATION PREFERRED NAME:Visa Credit</Line>
+        <Line>APPLICATION LABEL:VISA CREDIT</Line>
+        <Line>Response Code:000</Line>
+        <Line>Verified By PIN</Line>
+        <Line>REFERENCE NUMBER:157892</Line>
+      </AdditionalReceiptInfo>
+      <VoidData />
+      <LoyaltyInfo>
+        <Usepoints />
+        <BalancePoint />
+        <Expiry />
+        <LoyaltyLevel />
+      </LoyaltyInfo>
+      <ReferralNUM />
+      <ReferralDialInformation />
+      <OpenToPayCash />
+      <OpenToBuy />
+      <LastPaymentDate />
+      <LastPaymentAmount />
+      <ProcessorResponseCode>000</ProcessorResponseCode>
+      <GiftCardTypePassCode />
+      <ProcessorMerchantId />
+      <ForcedComplianceCode />
+      <CardIdentifier />
+      <TransactionToken />
+      <ReceiptToken>4761731111120011</ReceiptToken>
+      <CorpCardToken />
+      <EcomToken />
+      <EcomResponseCode />
+      <EcomResponseText />
+      <CRMToken>1369171680520011</CRMToken>
+      <ProcessorToken>1369171680520011</ProcessorToken>
+      <FraudScoreInfo>
+        <RequestToken />
+      </FraudScoreInfo>
+      <ECOMMInfo>
+        <OneOrderToken />
+        <CVVResult>0</CVVResult>
+      </ECOMMInfo>
+      <DCCDetails>
+        <DCCOffered>0</DCCOffered>
+      </DCCDetails>
+      <CashbackAmount>0.00</CashbackAmount>
+      <LanguageIndicator>00</LanguageIndicator>
+      <TotalApprovedAmount>34.00</TotalApprovedAmount>
+      <FallbackIndicator>0</FallbackIndicator>
+      <EMVDataInTLVFormat>AID%7EA0000000031010%1ETVR%7E8000048000%1EIAD%7E06010A03A0A800%1ETSI%7E6800%1EARC%7E3030</EMVDataInTLVFormat>
+      <PromotionCode />
+      <CardClass />
+      <BillingAddress />
+      <EPPDetailsInfo />
+      <Reserved1 />
+      <Reserved2 />
+      <CheckInfo />
+      <ReceiptDetails>
+        <ReceiptData>
+          <LanguageIndicator>00</LanguageIndicator>
+          <ReceiptInfo>
+            <Line>AMOUNT:34.00</Line>
+            <Line>CARD:VISA CREDIT XXXX0011 EMV</Line>
+            <Line>APPROVAL CODE:660646</Line>
+            <Line>AID:A0000000031010</Line>
+            <Line>TVR:8000048000</Line>
+            <Line>IAD:06010A03A0A800</Line>
+            <Line>TSI:6800</Line>
+            <Line>ARC:00</Line>
+            <Line>APPLICATION CRYPTOGRAM:63DAA197BE534E93</Line>
+            <Line>APPLICATION PREFERRED NAME:Visa Credit</Line>
+            <Line>APPLICATION LABEL:VISA CREDIT</Line>
+            <Line>Response Code:000</Line>
+            <Line>REFERENCE NUMBER:157892</Line>
+            <Line>Verified By PIN</Line>
+          </ReceiptInfo>
+        </ReceiptData>
+      </ReceiptDetails>
+    </TransDetailData>
+  </TransDetailsData>
+  <BatchNumber>108001</BatchNumber>
+  <AurusPayTicketNum>124108177163307270</AurusPayTicketNum>
+  <AdditionalTags>
+    <Tags>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+    </Tags>
+  </AdditionalTags>
+</TransResponse>
+
+2024-04-17 14:25:20 INFO  Logger:9 - <TransRequest>
+  <POSID>01</POSID>
+  <APPID>04</APPID>
+  <CCTID>06</CCTID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <CardPresent>Y</CardPresent>
+  <PurchaserPresent>Y</PurchaserPresent>
+  <EntrySource />
+  <KeyedEntryAVSFlag>N</KeyedEntryAVSFlag>
+  <GiftPurchaseAuthIndicator>N</GiftPurchaseAuthIndicator>
+  <EcommerceIndicator>N</EcommerceIndicator>
+  <EnableNFCReader>N</EnableNFCReader>
+  <CashBackFlag>0</CashBackFlag>
+  <CVBFlag>0</CVBFlag>
+  <ProcessingMode>0</ProcessingMode>
+  <ProcessCardFlag>0</ProcessCardFlag>
+  <TransAmountDetails>
+    <ProductTotalAmount>29.00</ProductTotalAmount>
+    <TaxAmount>5.00</TaxAmount>
+    <TenderAmount>34.00</TenderAmount>
+    <TransactionTotal>34.00~34.00</TransactionTotal>
+  </TransAmountDetails>
+  <TransactionType>02</TransactionType>
+  <ReferenceNumber>122185</ReferenceNumber>
+  <TaxExemptFlag>N</TaxExemptFlag>
+  <OrigAurusPayTicketNum>124108177163307270</OrigAurusPayTicketNum>
+  <OrigTransactionIdentifier>191241081771633034</OrigTransactionIdentifier>
+  <SubTransType />
+  <CurrencyCode>840</CurrencyCode>
+  <DCCOffered>0</DCCOffered>
+  <ClerkID />
+  <TransactionDate>04172024</TransactionDate>
+  <TransactionTime>142504</TransactionTime>
+  <TipEligible>0</TipEligible>
+  <AmountNoBar>0</AmountNoBar>
+  <SignatureFlag>N</SignatureFlag>
+  <IsTokenizedTransaction>0</IsTokenizedTransaction>
+  <PartialAllowed>0</PartialAllowed>
+  <PLCCPaymentMethod />
+</TransRequest>
+
+2024-04-17 14:25:20 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<TransResponse>
+  <POSID>01</POSID>
+  <APPID>04</APPID>
+  <CCTID>06</CCTID>
+  <TransDetailsData>
+    <TransDetailData>
+      <CardNumber>476173XXXXXX0011</CardNumber>
+      <CardType>VIC</CardType>
+      <TransactionTypeCode>2</TransactionTypeCode>
+      <CardEntryMode>K</CardEntryMode>
+      <KI />
+      <KIType />
+      <TransactionAmount>34.00</TransactionAmount>
+      <TipAmount>0.00</TipAmount>
+      <TransactionIdentifier>192241081773232808</TransactionIdentifier>
+      <ResponseCode>00000</ResponseCode>
+      <ResponseText>APPROVAL</ResponseText>
+      <ApprovalCode>000000</ApprovalCode>
+      <BalanceAmount>0.00</BalanceAmount>
+      <AuthAVSResult />
+      <TransactionSequenceNumber>000005</TransactionSequenceNumber>
+      <CardExpiryDate>1224</CardExpiryDate>
+      <CustomerName>UATUSA\/TestCard01</CustomerName>
+      <CustomerTokenNumber>1369171680520011</CustomerTokenNumber>
+      <SignatureReceiptFlag>1</SignatureReceiptFlag>
+      <PartialApprovedFlag>N</PartialApprovedFlag>
+      <EMVFlag>0</EMVFlag>
+      <EMVData />
+      <AdditionalReceiptInfo>
+        <Line>AMOUNT: 34.00</Line>
+        <Line>CARD:VISA CREDIT XXXX0011 KEYED</Line>
+        <Line>APPROVAL CODE:000000</Line>
+        <Line>Response Code:000</Line>
+        <Line>REFERENCE NUMBER:122185</Line>
+      </AdditionalReceiptInfo>
+      <VoidData />
+      <LoyaltyInfo>
+        <Usepoints />
+        <BalancePoint />
+        <Expiry />
+        <LoyaltyLevel />
+      </LoyaltyInfo>
+      <ReferralNUM />
+      <ReferralDialInformation />
+      <OpenToPayCash />
+      <OpenToBuy />
+      <LastPaymentDate />
+      <LastPaymentAmount />
+      <ProcessorResponseCode>000</ProcessorResponseCode>
+      <GiftCardTypePassCode />
+      <ProcessorMerchantId />
+      <ForcedComplianceCode />
+      <CardIdentifier />
+      <TransactionToken />
+      <ReceiptToken>4761731111120011</ReceiptToken>
+      <CorpCardToken />
+      <EcomToken />
+      <EcomResponseCode />
+      <EcomResponseText />
+      <CRMToken>1369171680520011</CRMToken>
+      <ProcessorToken>1369171680520011</ProcessorToken>
+      <FraudScoreInfo>
+        <RequestToken />
+      </FraudScoreInfo>
+      <ECOMMInfo>
+        <OneOrderToken />
+        <CVVResult>0</CVVResult>
+      </ECOMMInfo>
+      <DCCDetails>
+        <DCCOffered>0</DCCOffered>
+      </DCCDetails>
+      <CashbackAmount>0.00</CashbackAmount>
+      <LanguageIndicator>00</LanguageIndicator>
+      <TotalApprovedAmount>34.00</TotalApprovedAmount>
+      <FallbackIndicator>0</FallbackIndicator>
+      <PromotionCode />
+      <CardClass />
+      <BillingAddress />
+      <EPPDetailsInfo />
+      <Reserved1 />
+      <Reserved2 />
+      <CheckInfo />
+      <ReceiptDetails>
+        <ReceiptData>
+          <LanguageIndicator>00</LanguageIndicator>
+          <ReceiptInfo>
+            <Line>AMOUNT:34.00</Line>
+            <Line>CARD:VISA CREDIT XXXX0011 KEYED</Line>
+            <Line>APPROVAL CODE:000000</Line>
+            <Line>Response Code:000</Line>
+            <Line>REFERENCE NUMBER:122185</Line>
+          </ReceiptInfo>
+        </ReceiptData>
+      </ReceiptDetails>
+    </TransDetailData>
+  </TransDetailsData>
+  <BatchNumber>108001</BatchNumber>
+  <AurusPayTicketNum>224108177323297167</AurusPayTicketNum>
+  <AdditionalTags>
+    <Tags>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+    </Tags>
+  </AdditionalTags>
+</TransResponse>
+
+2024-04-17 14:26:10 INFO  Logger:9 - <CCTTicketDisplayRequest>
+  <POSID>01</POSID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <DisplayFlag>07</DisplayFlag>
+  <AllowCardReader>N</AllowCardReader>
+  <TransTotalDiscountAmt>9.00</TransTotalDiscountAmt>
+  <TransTotalQuantity>0</TransTotalQuantity>
+  <TaxAmount>7.00</TaxAmount>
+  <ServicesTotalAmount nil="true" />
+  <TransTotalAmount>43.00</TransTotalAmount>
+  <TicketProductData>
+    <TicketCount>1</TicketCount>
+    <Tickets>
+      <Ticket>
+        <TicketNumber>0000120240417142607163</TicketNumber>
+        <ProductCount>9</ProductCount>
+        <Products>
+          <Product>
+            <ProductID>1</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Mollitia enim consectetur.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>2</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Error est quasi sed aliquam ratione aperiam officia.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>3</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Pariatur quis cupiditate explicabo tenetur doloremque odio esse.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>4</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Accusamus nam qui voluptatum mollitia aut omnis.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>5</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Dolores quaerat sed neque temporibus.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>6</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Et dignissimos ut.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>7</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Dolore veritatis quas repellendus aut.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>8</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Consequatur consequuntur soluta.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>9</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Harum et dolor magni.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+        </Products>
+      </Ticket>
+    </Tickets>
+  </TicketProductData>
+</CCTTicketDisplayRequest>
+
+2024-04-17 14:26:10 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<CCTTicketDisplayResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <ResponseCode>00000</ResponseCode>
+  <ResponseText>Approved</ResponseText>
+</CCTTicketDisplayResponse>
+
+2024-04-17 14:26:16 INFO  Logger:9 - <GetCardBINRequest>
+	<POSID>01</POSID>
+	<ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+	<LookUpFlag>4</LookUpFlag>
+	<AllowKeyedEntry>N</AllowKeyedEntry>
+	<AllowManualFallback>N</AllowManualFallback>
+	<CardDataSource>0</CardDataSource>
+	<TenderAmount>43.00</TenderAmount>
+	<TransactionType>01</TransactionType>
+	<PromptConfirmFlag>1</PromptConfirmFlag>
+	<ProcessingMode>0</ProcessingMode>
+	<CustomerInfoValidation />
+</GetCardBINRequest>
+
+2024-04-17 14:26:16 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<GetCardBINResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <ResponseCode>00000</ResponseCode>
+  <ResponseText>APPROVAL</ResponseText>
+  <KI />
+  <KIType />
+  <CardType>MCC</CardType>
+  <CardToken>5413331100064111</CardToken>
+  <CardEntryMode>I</CardEntryMode>
+  <CardDataSource />
+  <CardTokenDetailData />
+  <FirstName>Test Card 06</FirstName>
+  <LastName>UAT USA</LastName>
+  <CardExpiryDate>1225</CardExpiryDate>
+  <CustomerInfoValidationResult>000000</CustomerInfoValidationResult>
+  <CustomerIdentifier />
+  <Level3Capable>N</Level3Capable>
+  <ECOMMInfo />
+  <DCCOffered>0</DCCOffered>
+  <FleetPromptsFlag />
+  <LoyaltyPassData />
+  <FallbackIndicator>0</FallbackIndicator>
+</GetCardBINResponse>
+
+2024-04-17 14:26:34 INFO  Logger:9 - <TransRequest>
+  <POSID>01</POSID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <CardToken>5413331100064111</CardToken>
+  <CardPresent>Y</CardPresent>
+  <PurchaserPresent>Y</PurchaserPresent>
+  <EntrySource />
+  <KeyedEntryAVSFlag>N</KeyedEntryAVSFlag>
+  <GiftPurchaseAuthIndicator>N</GiftPurchaseAuthIndicator>
+  <EcommerceIndicator>N</EcommerceIndicator>
+  <EnableNFCReader>N</EnableNFCReader>
+  <CashBackFlag>0</CashBackFlag>
+  <CVBFlag>0</CVBFlag>
+  <ProcessingMode>0</ProcessingMode>
+  <ProcessCardFlag>0</ProcessCardFlag>
+  <TransAmountDetails>
+    <ProductTotalAmount>36.00</ProductTotalAmount>
+    <TaxAmount>7.00</TaxAmount>
+    <TenderAmount>43.00</TenderAmount>
+    <TransactionTotal>43.00~43.00</TransactionTotal>
+  </TransAmountDetails>
+  <TransactionType>01</TransactionType>
+  <ReferenceNumber>157892</ReferenceNumber>
+  <TaxExemptFlag>N</TaxExemptFlag>
+  <SubTransType />
+  <CurrencyCode>840</CurrencyCode>
+  <DCCOffered>0</DCCOffered>
+  <TransactionDate>04172024</TransactionDate>
+  <TransactionTime>142617</TransactionTime>
+  <TipEligible>0</TipEligible>
+  <AmountNoBar>0</AmountNoBar>
+  <SignatureFlag>N</SignatureFlag>
+  <IsTokenizedTransaction>0</IsTokenizedTransaction>
+  <PartialAllowed>0</PartialAllowed>
+  <PLCCPaymentMethod />
+</TransRequest>
+
+2024-04-17 14:26:34 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<TransResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <TransDetailsData>
+    <TransDetailData>
+      <CardNumber>541333XXXXXX4111</CardNumber>
+      <CardType>MCC</CardType>
+      <TransactionTypeCode>1</TransactionTypeCode>
+      <CardEntryMode>I</CardEntryMode>
+      <KI />
+      <KIType />
+      <TransactionAmount>0.00</TransactionAmount>
+      <TipAmount>0.00</TipAmount>
+      <TransactionIdentifier>292241081780375534</TransactionIdentifier>
+      <ResponseCode>20006</ResponseCode>
+      <ResponseText>INSUFFICIENT FUNDS</ResponseText>
+      <ApprovalCode>000000</ApprovalCode>
+      <BalanceAmount>0.00</BalanceAmount>
+      <AuthAVSResult />
+      <TransactionSequenceNumber />
+      <CardExpiryDate>1225</CardExpiryDate>
+      <CustomerName>UAT USA Test Card 06</CustomerName>
+      <CustomerTokenNumber>0023391247034111</CustomerTokenNumber>
+      <SignatureReceiptFlag>0</SignatureReceiptFlag>
+      <PartialApprovedFlag>N</PartialApprovedFlag>
+      <EMVFlag>1</EMVFlag>
+      <EMVData>[FS]MerchantID~313306264885[FS]TerminalID~[FS]ARC~05[FS]ISO~00[FS]AID~A0000000041010[FS]TVR~8000008000[FS]TSI~6800[FS]IAD~0110A00003220000000000000000000000FF[FS]App Pref Name~Mastercard[FS]App Label~MASTERCARD[FS]RespDate~04172024[FS]RespTime~045643</EMVData>
+      <AdditionalReceiptInfo>
+        <Line>AMOUNT: 0.00</Line>
+        <Line>CARD:MASTERCARD CREDIT XXXX4111 EMV</Line>
+        <Line>APPROVAL CODE:000000</Line>
+        <Line>AID:A0000000041010</Line>
+        <Line>TVR:8000008000</Line>
+        <Line>IAD:0110A00003220000000000000000000000FF</Line>
+        <Line>TSI:6800</Line>
+        <Line>ARC:05</Line>
+        <Line>APPLICATION CRYPTOGRAM:79E022C2102772CF</Line>
+        <Line>APPLICATION PREFERRED NAME:Mastercard</Line>
+        <Line>APPLICATION LABEL:MASTERCARD</Line>
+        <Line>Response Code:116</Line>
+        <Line>REFERENCE NUMBER:157892</Line>
+      </AdditionalReceiptInfo>
+      <VoidData />
+      <LoyaltyInfo>
+        <Usepoints />
+        <BalancePoint />
+        <Expiry />
+        <LoyaltyLevel />
+      </LoyaltyInfo>
+      <ReferralNUM />
+      <ReferralDialInformation />
+      <OpenToPayCash />
+      <OpenToBuy />
+      <LastPaymentDate />
+      <LastPaymentAmount />
+      <ProcessorResponseCode>116</ProcessorResponseCode>
+      <GiftCardTypePassCode />
+      <ProcessorMerchantId />
+      <ForcedComplianceCode />
+      <CardIdentifier />
+      <TransactionToken />
+      <ReceiptToken>5413331100064111</ReceiptToken>
+      <CorpCardToken />
+      <EcomToken />
+      <EcomResponseCode />
+      <EcomResponseText />
+      <CRMToken>0023391247034111</CRMToken>
+      <ProcessorToken>0023391247034111</ProcessorToken>
+      <FraudScoreInfo>
+        <RequestToken />
+      </FraudScoreInfo>
+      <ECOMMInfo>
+        <OneOrderToken />
+        <CVVResult>0</CVVResult>
+      </ECOMMInfo>
+      <DCCDetails>
+        <DCCOffered>0</DCCOffered>
+      </DCCDetails>
+      <CashbackAmount>0.00</CashbackAmount>
+      <LanguageIndicator>00</LanguageIndicator>
+      <TotalApprovedAmount>0.00</TotalApprovedAmount>
+      <FallbackIndicator>0</FallbackIndicator>
+      <EMVDataInTLVFormat>AID%7EA0000000041010%1ETVR%7E8000008000%1EIAD%7E0110A00003220000000000000000000000FF%1ETSI%7E6800%1EARC%7E3035</EMVDataInTLVFormat>
+      <PromotionCode />
+      <CardClass />
+      <BillingAddress />
+      <EPPDetailsInfo />
+      <Reserved1 />
+      <Reserved2 />
+      <CheckInfo />
+      <ReceiptDetails>
+        <ReceiptData>
+          <LanguageIndicator>00</LanguageIndicator>
+          <ReceiptInfo>
+            <Line>AMOUNT:0.00</Line>
+            <Line>CARD:MASTERCARD CREDIT XXXX4111 EMV</Line>
+            <Line>APPROVAL CODE:000000</Line>
+            <Line>AID:A0000000041010</Line>
+            <Line>TVR:8000008000</Line>
+            <Line>IAD:0110A00003220000000000000000000000FF</Line>
+            <Line>TSI:6800</Line>
+            <Line>ARC:05</Line>
+            <Line>APPLICATION CRYPTOGRAM:79E022C2102772CF</Line>
+            <Line>APPLICATION PREFERRED NAME:Mastercard</Line>
+            <Line>APPLICATION LABEL:MASTERCARD</Line>
+            <Line>Response Code:116</Line>
+            <Line>REFERENCE NUMBER:157892</Line>
+          </ReceiptInfo>
+        </ReceiptData>
+      </ReceiptDetails>
+    </TransDetailData>
+  </TransDetailsData>
+  <BatchNumber>108001</BatchNumber>
+  <AurusPayTicketNum>000000000000000000</AurusPayTicketNum>
+  <AdditionalTags>
+    <Tags>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+    </Tags>
+  </AdditionalTags>
+</TransResponse>
+
+2024-04-17 14:26:49 INFO  Logger:9 - <CCTTicketDisplayRequest>
+  <POSID>01</POSID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <DisplayFlag>07</DisplayFlag>
+  <AllowCardReader>N</AllowCardReader>
+  <TransTotalDiscountAmt>2.00</TransTotalDiscountAmt>
+  <TransTotalQuantity>0</TransTotalQuantity>
+  <TaxAmount>2.00</TaxAmount>
+  <ServicesTotalAmount nil="true" />
+  <TransTotalAmount>13.00</TransTotalAmount>
+  <TicketProductData>
+    <TicketCount>1</TicketCount>
+    <Tickets>
+      <Ticket>
+        <TicketNumber>0000120240417142646525</TicketNumber>
+        <ProductCount>9</ProductCount>
+        <Products>
+          <Product>
+            <ProductID>1</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Odio quis sit iure dolorem impedit.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>2</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Sit nostrum sit voluptatem.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>3</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Animi aspernatur voluptatibus minima sapiente quis rerum.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>4</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Aperiam consequatur veniam unde.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>5</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Molestias possimus debitis qui.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>6</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Itaque voluptatem aspernatur.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>7</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Vel nulla quod dolorem qui sed consequatur.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>8</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Animi voluptatem neque exercitationem.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>9</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Sint voluptatum doloremque.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+        </Products>
+      </Ticket>
+    </Tickets>
+  </TicketProductData>
+</CCTTicketDisplayRequest>
+
+2024-04-17 14:26:49 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<CCTTicketDisplayResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <ResponseCode>00000</ResponseCode>
+  <ResponseText>Approved</ResponseText>
+</CCTTicketDisplayResponse>
+
+2024-04-17 14:26:55 INFO  Logger:9 - <GetCardBINRequest>
+	<POSID>01</POSID>
+	<ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+	<LookUpFlag>4</LookUpFlag>
+	<AllowKeyedEntry>N</AllowKeyedEntry>
+	<AllowManualFallback>N</AllowManualFallback>
+	<CardDataSource>0</CardDataSource>
+	<TenderAmount>13.00</TenderAmount>
+	<TransactionType>01</TransactionType>
+	<PromptConfirmFlag>1</PromptConfirmFlag>
+	<ProcessingMode>0</ProcessingMode>
+	<CustomerInfoValidation />
+</GetCardBINRequest>
+
+2024-04-17 14:26:55 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<GetCardBINResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <ResponseCode>00000</ResponseCode>
+  <ResponseText>APPROVAL</ResponseText>
+  <KI />
+  <KIType />
+  <CardType>MCC</CardType>
+  <CardToken>5413331100064111</CardToken>
+  <CardEntryMode>I</CardEntryMode>
+  <CardDataSource />
+  <CardTokenDetailData />
+  <FirstName>Test Card 06</FirstName>
+  <LastName>UAT USA</LastName>
+  <CardExpiryDate>1225</CardExpiryDate>
+  <CustomerInfoValidationResult>000000</CustomerInfoValidationResult>
+  <CustomerIdentifier />
+  <Level3Capable>N</Level3Capable>
+  <ECOMMInfo />
+  <DCCOffered>0</DCCOffered>
+  <FleetPromptsFlag />
+  <LoyaltyPassData />
+  <FallbackIndicator>0</FallbackIndicator>
+</GetCardBINResponse>
+
+2024-04-17 14:27:03 INFO  Logger:9 - <TransRequest>
+  <POSID>01</POSID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <CardToken>5413331100064111</CardToken>
+  <CardPresent>Y</CardPresent>
+  <PurchaserPresent>Y</PurchaserPresent>
+  <EntrySource />
+  <KeyedEntryAVSFlag>N</KeyedEntryAVSFlag>
+  <GiftPurchaseAuthIndicator>N</GiftPurchaseAuthIndicator>
+  <EcommerceIndicator>N</EcommerceIndicator>
+  <EnableNFCReader>N</EnableNFCReader>
+  <CashBackFlag>0</CashBackFlag>
+  <CVBFlag>0</CVBFlag>
+  <ProcessingMode>0</ProcessingMode>
+  <ProcessCardFlag>0</ProcessCardFlag>
+  <TransAmountDetails>
+    <ProductTotalAmount>11.00</ProductTotalAmount>
+    <TaxAmount>2.00</TaxAmount>
+    <TenderAmount>13.00</TenderAmount>
+    <TransactionTotal>13.00~13.00</TransactionTotal>
+  </TransAmountDetails>
+  <TransactionType>01</TransactionType>
+  <ReferenceNumber>157892</ReferenceNumber>
+  <TaxExemptFlag>N</TaxExemptFlag>
+  <SubTransType />
+  <CurrencyCode>840</CurrencyCode>
+  <DCCOffered>0</DCCOffered>
+  <TransactionDate>04172024</TransactionDate>
+  <TransactionTime>142656</TransactionTime>
+  <TipEligible>0</TipEligible>
+  <AmountNoBar>0</AmountNoBar>
+  <SignatureFlag>N</SignatureFlag>
+  <IsTokenizedTransaction>0</IsTokenizedTransaction>
+  <PartialAllowed>0</PartialAllowed>
+  <PLCCPaymentMethod />
+</TransRequest>
+
+2024-04-17 14:27:03 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<TransResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <TransDetailsData>
+    <TransDetailData>
+      <CardNumber>541333XXXXXX4111</CardNumber>
+      <CardType>MCC</CardType>
+      <TransactionTypeCode>1</TransactionTypeCode>
+      <CardEntryMode>I</CardEntryMode>
+      <KI />
+      <KIType />
+      <TransactionAmount>13.00</TransactionAmount>
+      <TipAmount>0.00</TipAmount>
+      <TransactionIdentifier>191241081783480842</TransactionIdentifier>
+      <ResponseCode>00000</ResponseCode>
+      <ResponseText>APPROVAL</ResponseText>
+      <ApprovalCode>939468</ApprovalCode>
+      <BalanceAmount>0.00</BalanceAmount>
+      <AuthAVSResult />
+      <TransactionSequenceNumber>000007</TransactionSequenceNumber>
+      <CardExpiryDate>1225</CardExpiryDate>
+      <CustomerName>UAT USA Test Card 06</CustomerName>
+      <CustomerTokenNumber>0023391247034111</CustomerTokenNumber>
+      <SignatureReceiptFlag>1</SignatureReceiptFlag>
+      <PartialApprovedFlag>N</PartialApprovedFlag>
+      <EMVFlag>1</EMVFlag>
+      <EMVData>[FS]MerchantID~313306264885[FS]TerminalID~[FS]ARC~00[FS]ISO~00[FS]AID~A0000000041010[FS]TVR~8000008000[FS]TSI~6800[FS]IAD~0110A00003220000000000000000000000FF[FS]App Pref Name~Mastercard[FS]App Label~MASTERCARD[FS]RespDate~04172024[FS]RespTime~045714</EMVData>
+      <AdditionalReceiptInfo>
+        <Line>AMOUNT: 13.00</Line>
+        <Line>CARD:MASTERCARD CREDIT XXXX4111 EMV</Line>
+        <Line>APPROVAL CODE:939468</Line>
+        <Line>AID:A0000000041010</Line>
+        <Line>TVR:8000008000</Line>
+        <Line>IAD:0110A00003220000000000000000000000FF</Line>
+        <Line>TSI:6800</Line>
+        <Line>ARC:00</Line>
+        <Line>APPLICATION CRYPTOGRAM:14CEF2A352DFE7FE</Line>
+        <Line>APPLICATION PREFERRED NAME:Mastercard</Line>
+        <Line>APPLICATION LABEL:MASTERCARD</Line>
+        <Line>Response Code:000</Line>
+        <Line>REFERENCE NUMBER:157892</Line>
+      </AdditionalReceiptInfo>
+      <VoidData />
+      <LoyaltyInfo>
+        <Usepoints />
+        <BalancePoint />
+        <Expiry />
+        <LoyaltyLevel />
+      </LoyaltyInfo>
+      <ReferralNUM />
+      <ReferralDialInformation />
+      <OpenToPayCash />
+      <OpenToBuy />
+      <LastPaymentDate />
+      <LastPaymentAmount />
+      <ProcessorResponseCode>000</ProcessorResponseCode>
+      <GiftCardTypePassCode />
+      <ProcessorMerchantId />
+      <ForcedComplianceCode />
+      <CardIdentifier />
+      <TransactionToken />
+      <ReceiptToken>5413331100064111</ReceiptToken>
+      <CorpCardToken />
+      <EcomToken />
+      <EcomResponseCode />
+      <EcomResponseText />
+      <CRMToken>0023391247034111</CRMToken>
+      <ProcessorToken>0023391247034111</ProcessorToken>
+      <FraudScoreInfo>
+        <RequestToken />
+      </FraudScoreInfo>
+      <ECOMMInfo>
+        <OneOrderToken />
+        <CVVResult>0</CVVResult>
+      </ECOMMInfo>
+      <DCCDetails>
+        <DCCOffered>0</DCCOffered>
+      </DCCDetails>
+      <CashbackAmount>0.00</CashbackAmount>
+      <LanguageIndicator>00</LanguageIndicator>
+      <TotalApprovedAmount>13.00</TotalApprovedAmount>
+      <FallbackIndicator>0</FallbackIndicator>
+      <EMVDataInTLVFormat>AID%7EA0000000041010%1ETVR%7E8000008000%1EIAD%7E0110A00003220000000000000000000000FF%1ETSI%7E6800%1EARC%7E3030</EMVDataInTLVFormat>
+      <PromotionCode />
+      <CardClass />
+      <BillingAddress />
+      <EPPDetailsInfo />
+      <Reserved1 />
+      <Reserved2 />
+      <CheckInfo />
+      <ReceiptDetails>
+        <ReceiptData>
+          <LanguageIndicator>00</LanguageIndicator>
+          <ReceiptInfo>
+            <Line>AMOUNT:13.00</Line>
+            <Line>CARD:MASTERCARD CREDIT XXXX4111 EMV</Line>
+            <Line>APPROVAL CODE:939468</Line>
+            <Line>AID:A0000000041010</Line>
+            <Line>TVR:8000008000</Line>
+            <Line>IAD:0110A00003220000000000000000000000FF</Line>
+            <Line>TSI:6800</Line>
+            <Line>ARC:00</Line>
+            <Line>APPLICATION CRYPTOGRAM:14CEF2A352DFE7FE</Line>
+            <Line>APPLICATION PREFERRED NAME:Mastercard</Line>
+            <Line>APPLICATION LABEL:MASTERCARD</Line>
+            <Line>Response Code:000</Line>
+            <Line>REFERENCE NUMBER:157892</Line>
+          </ReceiptInfo>
+        </ReceiptData>
+      </ReceiptDetails>
+    </TransDetailData>
+  </TransDetailsData>
+  <BatchNumber>108001</BatchNumber>
+  <AurusPayTicketNum>124108178348087307</AurusPayTicketNum>
+  <AdditionalTags>
+    <Tags>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+    </Tags>
+  </AdditionalTags>
+</TransResponse>
+
+2024-04-17 15:00:54 INFO  Logger:9 - <CCTTicketDisplayRequest>
+  <POSID>01</POSID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <DisplayFlag>07</DisplayFlag>
+  <AllowCardReader>N</AllowCardReader>
+  <TransTotalDiscountAmt>3.00</TransTotalDiscountAmt>
+  <TransTotalQuantity>0</TransTotalQuantity>
+  <TaxAmount>2.00</TaxAmount>
+  <ServicesTotalAmount nil="true" />
+  <TransTotalAmount>15.00</TransTotalAmount>
+  <TicketProductData>
+    <TicketCount>1</TicketCount>
+    <Tickets>
+      <Ticket>
+        <TicketNumber>0000120240417150052087</TicketNumber>
+        <ProductCount>9</ProductCount>
+        <Products>
+          <Product>
+            <ProductID>1</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Ea aliquam aut eius non sequi.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>2</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Asperiores molestias voluptas veniam doloribus.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>3</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Nobis voluptatem cum aperiam ea voluptatibus corporis magnam.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>4</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Corrupti laudantium occaecati.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>5</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Consequatur est sit adipisci earum voluptatem amet.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>6</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Aut molestiae unde quas nihil vitae.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>7</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Culpa hic odit sit quas.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>8</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Commodi et voluptatem quo velit omnis similique dolorum.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>9</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Dolore non ut.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+        </Products>
+      </Ticket>
+    </Tickets>
+  </TicketProductData>
+</CCTTicketDisplayRequest>
+
+2024-04-17 15:00:54 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<CCTTicketDisplayResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <ResponseCode>00000</ResponseCode>
+  <ResponseText>Approved</ResponseText>
+</CCTTicketDisplayResponse>
+
+2024-04-17 15:01:01 INFO  Logger:9 - <GetCardBINRequest>
+	<POSID>01</POSID>
+	<ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+	<LookUpFlag>4</LookUpFlag>
+	<AllowKeyedEntry>N</AllowKeyedEntry>
+	<AllowManualFallback>N</AllowManualFallback>
+	<CardDataSource>0</CardDataSource>
+	<TenderAmount>15.00</TenderAmount>
+	<TransactionType>01</TransactionType>
+	<PromptConfirmFlag>1</PromptConfirmFlag>
+	<ProcessingMode>0</ProcessingMode>
+	<CustomerInfoValidation />
+</GetCardBINRequest>
+
+2024-04-17 15:01:01 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<GetCardBINResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <ResponseCode>00000</ResponseCode>
+  <ResponseText>APPROVAL</ResponseText>
+  <KI />
+  <KIType />
+  <CardType>MCC</CardType>
+  <CardToken>5413331100064111</CardToken>
+  <CardEntryMode>I</CardEntryMode>
+  <CardDataSource />
+  <CardTokenDetailData />
+  <FirstName>Test Card 06</FirstName>
+  <LastName>UAT USA</LastName>
+  <CardExpiryDate>1225</CardExpiryDate>
+  <CustomerInfoValidationResult>000000</CustomerInfoValidationResult>
+  <CustomerIdentifier />
+  <Level3Capable>N</Level3Capable>
+  <ECOMMInfo />
+  <DCCOffered>0</DCCOffered>
+  <FleetPromptsFlag />
+  <LoyaltyPassData />
+  <FallbackIndicator>0</FallbackIndicator>
+</GetCardBINResponse>
+
+2024-04-17 15:01:08 INFO  Logger:9 - <TransRequest>
+  <POSID>01</POSID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <CardToken>5413331100064111</CardToken>
+  <CardPresent>Y</CardPresent>
+  <PurchaserPresent>Y</PurchaserPresent>
+  <EntrySource />
+  <KeyedEntryAVSFlag>N</KeyedEntryAVSFlag>
+  <GiftPurchaseAuthIndicator>N</GiftPurchaseAuthIndicator>
+  <EcommerceIndicator>N</EcommerceIndicator>
+  <EnableNFCReader>N</EnableNFCReader>
+  <CashBackFlag>0</CashBackFlag>
+  <CVBFlag>0</CVBFlag>
+  <ProcessingMode>0</ProcessingMode>
+  <ProcessCardFlag>0</ProcessCardFlag>
+  <TransAmountDetails>
+    <ProductTotalAmount>13.00</ProductTotalAmount>
+    <TaxAmount>2.00</TaxAmount>
+    <TenderAmount>15.00</TenderAmount>
+    <TransactionTotal>15.00~15.00</TransactionTotal>
+  </TransAmountDetails>
+  <TransactionType>01</TransactionType>
+  <ReferenceNumber>157892</ReferenceNumber>
+  <TaxExemptFlag>N</TaxExemptFlag>
+  <SubTransType />
+  <CurrencyCode>840</CurrencyCode>
+  <DCCOffered>0</DCCOffered>
+  <TransactionDate>04172024</TransactionDate>
+  <TransactionTime>150101</TransactionTime>
+  <TipEligible>0</TipEligible>
+  <AmountNoBar>0</AmountNoBar>
+  <SignatureFlag>N</SignatureFlag>
+  <IsTokenizedTransaction>0</IsTokenizedTransaction>
+  <PartialAllowed>0</PartialAllowed>
+  <PLCCPaymentMethod />
+</TransRequest>
+
+2024-04-17 15:01:08 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<TransResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <TransDetailsData>
+    <TransDetailData>
+      <CardNumber>541333XXXXXX4111</CardNumber>
+      <CardType>MCC</CardType>
+      <TransactionTypeCode>1</TransactionTypeCode>
+      <CardEntryMode>I</CardEntryMode>
+      <KI />
+      <KIType />
+      <TransactionAmount>15.00</TransactionAmount>
+      <TipAmount>0.00</TipAmount>
+      <TransactionIdentifier>191241081988006812</TransactionIdentifier>
+      <ResponseCode>00000</ResponseCode>
+      <ResponseText>APPROVAL</ResponseText>
+      <ApprovalCode>448097</ApprovalCode>
+      <BalanceAmount>0.00</BalanceAmount>
+      <AuthAVSResult />
+      <TransactionSequenceNumber>000008</TransactionSequenceNumber>
+      <CardExpiryDate>1225</CardExpiryDate>
+      <CustomerName>UAT USA Test Card 06</CustomerName>
+      <CustomerTokenNumber>0023391247034111</CustomerTokenNumber>
+      <SignatureReceiptFlag>1</SignatureReceiptFlag>
+      <PartialApprovedFlag>N</PartialApprovedFlag>
+      <EMVFlag>1</EMVFlag>
+      <EMVData>[FS]MerchantID~313306264885[FS]TerminalID~[FS]ARC~00[FS]ISO~00[FS]AID~A0000000041010[FS]TVR~8000008000[FS]TSI~6800[FS]IAD~0110A00003220000000000000000000000FF[FS]App Pref Name~Mastercard[FS]App Label~MASTERCARD[FS]RespDate~04172024[FS]RespTime~053120</EMVData>
+      <AdditionalReceiptInfo>
+        <Line>AMOUNT: 15.00</Line>
+        <Line>CARD:MASTERCARD CREDIT XXXX4111 EMV</Line>
+        <Line>APPROVAL CODE:448097</Line>
+        <Line>AID:A0000000041010</Line>
+        <Line>TVR:8000008000</Line>
+        <Line>IAD:0110A00003220000000000000000000000FF</Line>
+        <Line>TSI:6800</Line>
+        <Line>ARC:00</Line>
+        <Line>APPLICATION CRYPTOGRAM:FC572F5C326DFF67</Line>
+        <Line>APPLICATION PREFERRED NAME:Mastercard</Line>
+        <Line>APPLICATION LABEL:MASTERCARD</Line>
+        <Line>Response Code:000</Line>
+        <Line>REFERENCE NUMBER:157892</Line>
+      </AdditionalReceiptInfo>
+      <VoidData />
+      <LoyaltyInfo>
+        <Usepoints />
+        <BalancePoint />
+        <Expiry />
+        <LoyaltyLevel />
+      </LoyaltyInfo>
+      <ReferralNUM />
+      <ReferralDialInformation />
+      <OpenToPayCash />
+      <OpenToBuy />
+      <LastPaymentDate />
+      <LastPaymentAmount />
+      <ProcessorResponseCode>000</ProcessorResponseCode>
+      <GiftCardTypePassCode />
+      <ProcessorMerchantId />
+      <ForcedComplianceCode />
+      <CardIdentifier />
+      <TransactionToken />
+      <ReceiptToken>5413331100064111</ReceiptToken>
+      <CorpCardToken />
+      <EcomToken />
+      <EcomResponseCode />
+      <EcomResponseText />
+      <CRMToken>0023391247034111</CRMToken>
+      <ProcessorToken>0023391247034111</ProcessorToken>
+      <FraudScoreInfo>
+        <RequestToken />
+      </FraudScoreInfo>
+      <ECOMMInfo>
+        <OneOrderToken />
+        <CVVResult>0</CVVResult>
+      </ECOMMInfo>
+      <DCCDetails>
+        <DCCOffered>0</DCCOffered>
+      </DCCDetails>
+      <CashbackAmount>0.00</CashbackAmount>
+      <LanguageIndicator>00</LanguageIndicator>
+      <TotalApprovedAmount>15.00</TotalApprovedAmount>
+      <FallbackIndicator>0</FallbackIndicator>
+      <EMVDataInTLVFormat>AID%7EA0000000041010%1ETVR%7E8000008000%1EIAD%7E0110A00003220000000000000000000000FF%1ETSI%7E6800%1EARC%7E3030</EMVDataInTLVFormat>
+      <PromotionCode />
+      <CardClass />
+      <BillingAddress />
+      <EPPDetailsInfo />
+      <Reserved1 />
+      <Reserved2 />
+      <CheckInfo />
+      <ReceiptDetails>
+        <ReceiptData>
+          <LanguageIndicator>00</LanguageIndicator>
+          <ReceiptInfo>
+            <Line>AMOUNT:15.00</Line>
+            <Line>CARD:MASTERCARD CREDIT XXXX4111 EMV</Line>
+            <Line>APPROVAL CODE:448097</Line>
+            <Line>AID:A0000000041010</Line>
+            <Line>TVR:8000008000</Line>
+            <Line>IAD:0110A00003220000000000000000000000FF</Line>
+            <Line>TSI:6800</Line>
+            <Line>ARC:00</Line>
+            <Line>APPLICATION CRYPTOGRAM:FC572F5C326DFF67</Line>
+            <Line>APPLICATION PREFERRED NAME:Mastercard</Line>
+            <Line>APPLICATION LABEL:MASTERCARD</Line>
+            <Line>Response Code:000</Line>
+            <Line>REFERENCE NUMBER:157892</Line>
+          </ReceiptInfo>
+        </ReceiptData>
+      </ReceiptDetails>
+    </TransDetailData>
+  </TransDetailsData>
+  <BatchNumber>108001</BatchNumber>
+  <AurusPayTicketNum>124108198800689057</AurusPayTicketNum>
+  <AdditionalTags>
+    <Tags>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+    </Tags>
+  </AdditionalTags>
+</TransResponse>
+
+2024-04-17 19:29:04 INFO  Logger:9 - <CCTTicketDisplayRequest>
+  <POSID>01</POSID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <DisplayFlag>07</DisplayFlag>
+  <AllowCardReader>N</AllowCardReader>
+  <TransTotalDiscountAmt>18.00</TransTotalDiscountAmt>
+  <TransTotalQuantity>0</TransTotalQuantity>
+  <TaxAmount>15.00</TaxAmount>
+  <ServicesTotalAmount nil="true" />
+  <TransTotalAmount>90.00</TransTotalAmount>
+  <TicketProductData>
+    <TicketCount>1</TicketCount>
+    <Tickets>
+      <Ticket>
+        <TicketNumber>0000120240417192902697</TicketNumber>
+        <ProductCount>9</ProductCount>
+        <Products>
+          <Product>
+            <ProductID>1</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Sit qui vel quaerat non.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>2</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Sunt eos velit aliquam et.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>3</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Possimus est minima odio dolor.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>4</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Et assumenda quia quam soluta ea magni.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>5</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Soluta rem fuga dolorum alias.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>6</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Et consequatur amet tempore illum omnis perferendis.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>7</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Accusamus fugit qui est repellat.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>8</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Nostrum qui deserunt sunt.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+          <Product>
+            <ProductID>9</ProductID>
+            <ProductName>SKECHERS KA JUTTA</ProductName>
+            <ProductTypeIndicator>0</ProductTypeIndicator>
+            <ServiceLevel>F</ServiceLevel>
+            <ProductStatementDescriptor>Quia est reiciendis nobis.</ProductStatementDescriptor>
+            <UnitOfMeasure>O</UnitOfMeasure>
+            <ProductDiscountFlag>0</ProductDiscountFlag>
+            <ProductDiscount nil="true" />
+            <Quantity>0</Quantity>
+            <Price nil="true" />
+            <ProductTypeFlag />
+          </Product>
+        </Products>
+      </Ticket>
+    </Tickets>
+  </TicketProductData>
+</CCTTicketDisplayRequest>
+
+2024-04-17 19:29:04 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<CCTTicketDisplayResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <ResponseCode>00000</ResponseCode>
+  <ResponseText>Approved</ResponseText>
+  <SessionId>12345</SessionId>
+</CCTTicketDisplayResponse>
+
+2024-04-17 19:29:13 INFO  Logger:9 - <GetCardBINRequest>
+	<POSID>01</POSID>
+	<ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+	<LookUpFlag>4</LookUpFlag>
+	<AllowKeyedEntry>N</AllowKeyedEntry>
+	<AllowManualFallback>N</AllowManualFallback>
+	<CardDataSource>0</CardDataSource>
+	<TenderAmount>90.00</TenderAmount>
+	<TransactionType>01</TransactionType>
+	<PromptConfirmFlag>1</PromptConfirmFlag>
+	<ProcessingMode>0</ProcessingMode>
+	<CustomerInfoValidation />
+</GetCardBINRequest>
+
+2024-04-17 19:29:13 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<GetCardBINResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <ResponseCode>00000</ResponseCode>
+  <ResponseText>APPROVAL</ResponseText>
+  <KI />
+  <KIType />
+  <CardType>AXC</CardType>
+  <CardToken>374245110011003</CardToken>
+  <CardEntryMode>I</CardEntryMode>
+  <CardDataSource />
+  <CardTokenDetailData />
+  <FirstName>Test Card 13</FirstName>
+  <LastName>UAT USA</LastName>
+  <CardExpiryDate>1224</CardExpiryDate>
+  <CustomerInfoValidationResult>000000</CustomerInfoValidationResult>
+  <CustomerIdentifier />
+  <Level3Capable>N</Level3Capable>
+  <ECOMMInfo />
+  <DCCOffered>0</DCCOffered>
+  <FleetPromptsFlag />
+  <LoyaltyPassData />
+  <FallbackIndicator>0</FallbackIndicator>
+</GetCardBINResponse>
+
+2024-04-17 19:29:24 INFO  Logger:9 - <TransRequest>
+  <POSID>01</POSID>
+  <ADSDKSpecVer>6.13.0</ADSDKSpecVer>
+  <CardToken>374245110011003</CardToken>
+  <CardPresent>Y</CardPresent>
+  <PurchaserPresent>Y</PurchaserPresent>
+  <EntrySource />
+  <KeyedEntryAVSFlag>N</KeyedEntryAVSFlag>
+  <GiftPurchaseAuthIndicator>N</GiftPurchaseAuthIndicator>
+  <EcommerceIndicator>N</EcommerceIndicator>
+  <EnableNFCReader>N</EnableNFCReader>
+  <CashBackFlag>0</CashBackFlag>
+  <CVBFlag>0</CVBFlag>
+  <ProcessingMode>0</ProcessingMode>
+  <ProcessCardFlag>0</ProcessCardFlag>
+  <TransAmountDetails>
+    <ProductTotalAmount>75.00</ProductTotalAmount>
+    <TaxAmount>15.00</TaxAmount>
+    <TenderAmount>90.00</TenderAmount>
+    <TransactionTotal>90.00~90.00</TransactionTotal>
+  </TransAmountDetails>
+  <TransactionType>01</TransactionType>
+  <ReferenceNumber>157892</ReferenceNumber>
+  <TaxExemptFlag>N</TaxExemptFlag>
+  <SubTransType />
+  <CurrencyCode>840</CurrencyCode>
+  <DCCOffered>0</DCCOffered>
+  <TransactionDate>04172024</TransactionDate>
+  <TransactionTime>192913</TransactionTime>
+  <TipEligible>0</TipEligible>
+  <AmountNoBar>0</AmountNoBar>
+  <SignatureFlag>N</SignatureFlag>
+  <IsTokenizedTransaction>0</IsTokenizedTransaction>
+  <PartialAllowed>0</PartialAllowed>
+  <PLCCPaymentMethod />
+</TransRequest>
+
+2024-04-17 19:29:24 INFO  Logger:10 - <?xml version="1.0" encoding="UTF-8"?>
+<TransResponse>
+  <POSID>01</POSID>
+  <APPID />
+  <CCTID />
+  <TransDetailsData>
+    <TransDetailData>
+      <CardNumber>374245XXXXX1003</CardNumber>
+      <CardType>AXC</CardType>
+      <TransactionTypeCode>1</TransactionTypeCode>
+      <CardEntryMode>I</CardEntryMode>
+      <KI />
+      <KIType />
+      <TransactionAmount>90.00</TransactionAmount>
+      <TipAmount>0.00</TipAmount>
+      <TransactionIdentifier>191241083597589814</TransactionIdentifier>
+      <ResponseCode>00000</ResponseCode>
+      <ResponseText>APPROVAL</ResponseText>
+      <ApprovalCode>083542</ApprovalCode>
+      <BalanceAmount>0.00</BalanceAmount>
+      <AuthAVSResult />
+      <TransactionSequenceNumber>000015</TransactionSequenceNumber>
+      <CardExpiryDate>1224</CardExpiryDate>
+      <CustomerName>UAT USA Test Card 13</CustomerName>
+      <CustomerTokenNumber>975238018371003</CustomerTokenNumber>
+      <SignatureReceiptFlag>1</SignatureReceiptFlag>
+      <PartialApprovedFlag>N</PartialApprovedFlag>
+      <EMVFlag>1</EMVFlag>
+      <EMVData>[FS]MerchantID~313306264885[FS]TerminalID~[FS]ARC~00[FS]ISO~00[FS]AID~A000000025010402[FS]TVR~8000008000[FS]TSI~6800[FS]IAD~06020103A0A800[FS]App Pref Name~American Express[FS]App Label~AMERICAN EXPRESS[FS]RespDate~04172024[FS]RespTime~095935</EMVData>
+      <AdditionalReceiptInfo>
+        <Line>AMOUNT: 90.00</Line>
+        <Line>CARD:AMEX CREDIT XXXX1003 EMV</Line>
+        <Line>APPROVAL CODE:083542</Line>
+        <Line>AID:A000000025010402</Line>
+        <Line>TVR:8000008000</Line>
+        <Line>IAD:06020103A0A800</Line>
+        <Line>TSI:6800</Line>
+        <Line>ARC:00</Line>
+        <Line>APPLICATION CRYPTOGRAM:FEC6F565B3361A87</Line>
+        <Line>APPLICATION PREFERRED NAME:American Express</Line>
+        <Line>APPLICATION LABEL:AMERICAN EXPRESS</Line>
+        <Line>Response Code:000</Line>
+        <Line>REFERENCE NUMBER:157892</Line>
+      </AdditionalReceiptInfo>
+      <VoidData />
+      <LoyaltyInfo>
+        <Usepoints />
+        <BalancePoint />
+        <Expiry />
+        <LoyaltyLevel />
+      </LoyaltyInfo>
+      <ReferralNUM />
+      <ReferralDialInformation />
+      <OpenToPayCash />
+      <OpenToBuy />
+      <LastPaymentDate />
+      <LastPaymentAmount />
+      <ProcessorResponseCode>000</ProcessorResponseCode>
+      <GiftCardTypePassCode />
+      <ProcessorMerchantId />
+      <ForcedComplianceCode />
+      <CardIdentifier />
+      <TransactionToken />
+      <ReceiptToken>374245110011003</ReceiptToken>
+      <CorpCardToken />
+      <EcomToken />
+      <EcomResponseCode />
+      <EcomResponseText />
+      <CRMToken>975238018371003</CRMToken>
+      <ProcessorToken>975238018371003</ProcessorToken>
+      <FraudScoreInfo>
+        <RequestToken />
+      </FraudScoreInfo>
+      <ECOMMInfo>
+        <OneOrderToken />
+        <CVVResult>0</CVVResult>
+      </ECOMMInfo>
+      <DCCDetails>
+        <DCCOffered>0</DCCOffered>
+      </DCCDetails>
+      <CashbackAmount>0.00</CashbackAmount>
+      <LanguageIndicator>00</LanguageIndicator>
+      <TotalApprovedAmount>90.00</TotalApprovedAmount>
+      <FallbackIndicator>0</FallbackIndicator>
+      <EMVDataInTLVFormat>AID%7EA000000025010402%1ETVR%7E8000008000%1EIAD%7E06020103A0A800%1ETSI%7E6800%1EARC%7E3030</EMVDataInTLVFormat>
+      <PromotionCode />
+      <CardClass />
+      <BillingAddress />
+      <EPPDetailsInfo />
+      <Reserved1 />
+      <Reserved2 />
+      <CheckInfo />
+      <ReceiptDetails>
+        <ReceiptData>
+          <LanguageIndicator>00</LanguageIndicator>
+          <ReceiptInfo>
+            <Line>AMOUNT:90.00</Line>
+            <Line>CARD:AMEX CREDIT XXXX1003 EMV</Line>
+            <Line>APPROVAL CODE:083542</Line>
+            <Line>AID:A000000025010402</Line>
+            <Line>TVR:8000008000</Line>
+            <Line>IAD:06020103A0A800</Line>
+            <Line>TSI:6800</Line>
+            <Line>ARC:00</Line>
+            <Line>APPLICATION CRYPTOGRAM:FEC6F565B3361A87</Line>
+            <Line>APPLICATION PREFERRED NAME:American Express</Line>
+            <Line>APPLICATION LABEL:AMERICAN EXPRESS</Line>
+            <Line>Response Code:000</Line>
+            <Line>REFERENCE NUMBER:157892</Line>
+          </ReceiptInfo>
+        </ReceiptData>
+      </ReceiptDetails>
+    </TransDetailData>
+  </TransDetailsData>
+  <BatchNumber>108001</BatchNumber>
+  <AurusPayTicketNum>124108359758986905</AurusPayTicketNum>
+  <AdditionalTags>
+    <Tags>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+      <Tag>
+        <Key />
+        <Value />
+      </Tag>
+    </Tags>
+  </AdditionalTags>
+</TransResponse>
+

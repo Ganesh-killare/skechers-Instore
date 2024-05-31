@@ -34,7 +34,7 @@ public class TC_GiftCard extends BaseClass {
 
 		String ticketResponse = receiveResponseFromAESDK();
 		// System.out.println(ticketResponse);
-		Logger.logRequestandRespons(ticketRequest, ticketResponse);
+	
 
 	}
 
@@ -45,7 +45,7 @@ public class TC_GiftCard extends BaseClass {
 		sendRequestToAESDK(gcbRequest);
 		String gcbResponse = receiveResponseFromAESDK();
 		// System.out.println(gcbResponse);
-		Logger.logRequestandRespons(gcbRequest, gcbResponse);
+	
 
 		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
 		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
@@ -61,7 +61,7 @@ public class TC_GiftCard extends BaseClass {
 			String giftResponse = receiveResponseFromAESDK();
 			// System.out.println(giftResponse);
 
-			Logger.logRequestandRespons(giftRequest, giftResponse);
+		
 			// System.out.println(giftResponse);
 
 			Response_Parameters giftParam = new Response_Parameters(giftResponse);
@@ -81,7 +81,7 @@ public class TC_GiftCard extends BaseClass {
 		sendRequestToAESDK(gcbRequest);
 		String gcbResponse = receiveResponseFromAESDK();
 		// System.out.println(gcbResponse);
-		Logger.logRequestandRespons(gcbRequest, gcbResponse);
+	
 
 		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
 		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
@@ -97,7 +97,7 @@ public class TC_GiftCard extends BaseClass {
 			String giftResponse = receiveResponseFromAESDK();
 			// System.out.println(giftResponse);
 
-			Logger.logRequestandRespons(giftRequest, giftResponse);
+		
 			// System.out.println(giftResponse);
 
 			Response_Parameters giftParam = new Response_Parameters(giftResponse);
@@ -118,7 +118,7 @@ public class TC_GiftCard extends BaseClass {
 		sendRequestToAESDK(gcbRequest);
 		String gcbResponse = receiveResponseFromAESDK();
 		// System.out.println(gcbResponse);
-		Logger.logRequestandRespons(gcbRequest, gcbResponse);
+	
 
 		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
 		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
@@ -134,7 +134,7 @@ public class TC_GiftCard extends BaseClass {
 			String giftResponse = receiveResponseFromAESDK();
 		//	System.out.println(giftResponse);
 
-			Logger.logRequestandRespons(giftRequest, giftResponse);
+		
 			// System.out.println(giftResponse);
 
 			Response_Parameters giftParam = new Response_Parameters(giftResponse);
@@ -154,7 +154,7 @@ public class TC_GiftCard extends BaseClass {
 		sendRequestToAESDK(gcbRequest);
 		String gcbResponse = receiveResponseFromAESDK();
 		// System.out.println(gcbResponse);
-		Logger.logRequestandRespons(gcbRequest, gcbResponse);
+	
 
 		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
 		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
@@ -170,7 +170,7 @@ public class TC_GiftCard extends BaseClass {
 			String giftResponse = receiveResponseFromAESDK();
 		//	System.out.println(giftResponse);
 
-			Logger.logRequestandRespons(giftRequest, giftResponse);
+		
 			// System.out.println(giftResponse);
 
 			Response_Parameters giftParam = new Response_Parameters(giftResponse);
@@ -191,7 +191,7 @@ public class TC_GiftCard extends BaseClass {
 				List<String> returnData = returnRes.print_Response("Void ", parameters);
 				returnData.add(1, "Void");
 				xl.writeTransactionData(returnData);
-				Logger.logRequestandRespons(returnRequest, returnResponse);
+				
 
 			}
 		}
@@ -202,7 +202,7 @@ public class TC_GiftCard extends BaseClass {
 		sendRequestToAESDK(gcbRequest);
 		String gcbResponse = receiveResponseFromAESDK();
 		// System.out.println(gcbResponse);
-		Logger.logRequestandRespons(gcbRequest, gcbResponse);
+	
 		
 		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
 		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
@@ -218,7 +218,7 @@ public class TC_GiftCard extends BaseClass {
 			String giftResponse = receiveResponseFromAESDK();
 			//	System.out.println(giftResponse);
 			
-			Logger.logRequestandRespons(giftRequest, giftResponse);
+		
 			// System.out.println(giftResponse);
 			
 			Response_Parameters giftParam = new Response_Parameters(giftResponse);
@@ -239,7 +239,7 @@ public class TC_GiftCard extends BaseClass {
 				List<String> returnData = returnRes.print_Response("CancelLast ", parameters);
 				returnData.add(1, "CancelLast");
 				xl.writeTransactionData(returnData);
-				Logger.logRequestandRespons(giftCancelLast, returnResponse);
+				
 				
 			}
 		}
@@ -252,7 +252,7 @@ public class TC_GiftCard extends BaseClass {
 		sendRequestToAESDK(gcbRequest);
 		String gcbResponse = receiveResponseFromAESDK();
 		// System.out.println(gcbResponse);
-		Logger.logRequestandRespons(gcbRequest, gcbResponse);
+	
 
 		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
 		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
@@ -268,7 +268,7 @@ public class TC_GiftCard extends BaseClass {
 			String giftResponse = receiveResponseFromAESDK();
 			//System.out.println(giftResponse);
 
-			Logger.logRequestandRespons(giftRequest, giftResponse);
+		
 			// System.out.println(giftResponse);
 
 			Response_Parameters giftParam = new Response_Parameters(giftResponse);
@@ -287,7 +287,7 @@ public class TC_GiftCard extends BaseClass {
 		sendRequestToAESDK(gcbRequest);
 		String gcbResponse = receiveResponseFromAESDK();
 		// System.out.println(gcbResponse);
-		Logger.logRequestandRespons(gcbRequest, gcbResponse);
+	
 
 		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
 		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
@@ -303,7 +303,7 @@ public class TC_GiftCard extends BaseClass {
 			String giftResponse = receiveResponseFromAESDK();
 		//	System.out.println(giftResponse);
 
-			Logger.logRequestandRespons(giftRequest, giftResponse);
+		
 			// System.out.println(giftResponse);
 
 			Response_Parameters giftParam = new Response_Parameters(giftResponse);

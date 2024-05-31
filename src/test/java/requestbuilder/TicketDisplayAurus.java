@@ -2,9 +2,6 @@ package requestbuilder;
 
 import java.io.StringReader;
 import java.io.StringWriter;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
 
 import org.jdom2.Document;
 import org.jdom2.Element;
@@ -15,10 +12,8 @@ import org.xml.sax.InputSource;
 
 import com.github.javafaker.Faker;
 
-
 public class TicketDisplayAurus {
 
-   
 	public static String request() {
 		ProductXmlResult result = generateProductsData();
 		String productData = result.getProductData();

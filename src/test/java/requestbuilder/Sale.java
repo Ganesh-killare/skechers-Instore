@@ -1,7 +1,10 @@
 package requestbuilder;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.StringWriter;
 import java.util.List;
+import java.util.Properties;
 
 import org.jdom2.Document;
 import org.jdom2.Element;
@@ -22,17 +25,16 @@ public class Sale {
 
 		String transactionAmount = amt.get(2) + "~" + amt.get(2);
 
-		/*
-		 * if(transactionAmount.equalsIgnoreCase("45.00")) { transactionAmount= "10.00";
-		 * }
-		 */
+		
 
 		// Date & Time with Invoice Number
 
 		String formattedTime = Utils.generateDateTimeIPHostName().get(0);
 		String finalDate = Utils.generateDateTimeIPHostName().get(1);
-		String IP = Utils.generateDateTimeIPHostName().get(2);
-		String HostName = Utils.generateDateTimeIPHostName().get(3);
+		/*
+		 * String IP = Utils.generateDateTimeIPHostName().get(2); String HostName =
+		 * Utils.generateDateTimeIPHostName().get(3);
+		 */
 
 		try {
 			// Load the XML file
@@ -41,23 +43,15 @@ public class Sale {
 
 			// Get the root element (TransRequest)
 			Element root = doc.getRootElement();
+		
+			
 
-			// Modify the parameters
-			root.getChild("TransAmountDetails").getChild("ProductTotalAmount").setText(amt.get(0));
-			root.getChild("TransAmountDetails").getChild("TaxAmount").setText(amt.get(1));
-			root.getChild("TransAmountDetails").getChild("TenderAmount").setText(amt.get(2));
-			root.getChild("TransAmountDetails").getChild("TransactionTotal").setText(transactionAmount);
-
-			// after pay hardcode amount
-
-			/*
-			 * root.getChild("TransAmountDetails").getChild("ProductTotalAmount").setText(
-			 * "12.10");
-			 * root.getChild("TransAmountDetails").getChild("TaxAmount").setText("0.00");
-			 * root.getChild("TransAmountDetails").getChild("TenderAmount").setText("12.10")
-			 * ; root.getChild("TransAmountDetails").getChild("TransactionTotal").setText(
-			 * "12.10");
-			 */
+				// Modify the parameters
+				root.getChild("TransAmountDetails").getChild("ProductTotalAmount").setText(amt.get(0));
+				root.getChild("TransAmountDetails").getChild("TaxAmount").setText(amt.get(1));
+				root.getChild("TransAmountDetails").getChild("TenderAmount").setText(amt.get(2));
+				root.getChild("TransAmountDetails").getChild("TransactionTotal").setText(transactionAmount);
+			
 
 			root.getChild("CardToken").setText(cardToken);
 			root.getChild("TransactionType").setText(transType);
@@ -87,17 +81,16 @@ public class Sale {
 
 		String transactionAmount = amt.get(2) + "~" + amt.get(2);
 
-		/*
-		 * if(transactionAmount.equalsIgnoreCase("45.00")) { transactionAmount= "10.00";
-		 * }
-		 */
+		
 
 		// Date & Time with Invoice Number
 
 		String formattedTime = Utils.generateDateTimeIPHostName().get(0);
 		String finalDate = Utils.generateDateTimeIPHostName().get(1);
-		String IP = Utils.generateDateTimeIPHostName().get(2);
-		String HostName = Utils.generateDateTimeIPHostName().get(3);
+		/*
+		 * String IP = Utils.generateDateTimeIPHostName().get(2); String HostName =
+		 * Utils.generateDateTimeIPHostName().get(3);
+		 */
 
 		try {
 			// Load the XML file
@@ -106,22 +99,15 @@ public class Sale {
 
 			// Get the root element (TransRequest)
 			Element root = doc.getRootElement();
+		
+			
 
-			// Modify the parameters
-			root.getChild("TransAmountDetails").getChild("ProductTotalAmount").setText(amt.get(0));
-			root.getChild("TransAmountDetails").getChild("TaxAmount").setText(amt.get(1));
-			root.getChild("TransAmountDetails").getChild("TenderAmount").setText(amt.get(2));
-			root.getChild("TransAmountDetails").getChild("TransactionTotal").setText(transactionAmount);
-
-			// After pay
-			/*
-			 * root.getChild("TransAmountDetails").getChild("ProductTotalAmount").setText(
-			 * "12.10");
-			 * root.getChild("TransAmountDetails").getChild("TaxAmount").setText("0.00");
-			 * root.getChild("TransAmountDetails").getChild("TenderAmount").setText("12.10")
-			 * ; root.getChild("TransAmountDetails").getChild("TransactionTotal").setText(
-			 * "12.10");
-			 */
+				// Modify the parameters
+				root.getChild("TransAmountDetails").getChild("ProductTotalAmount").setText(amt.get(0));
+				root.getChild("TransAmountDetails").getChild("TaxAmount").setText(amt.get(1));
+				root.getChild("TransAmountDetails").getChild("TenderAmount").setText(amt.get(2));
+				root.getChild("TransAmountDetails").getChild("TransactionTotal").setText(transactionAmount);
+			
 
 			root.getChild("CardToken").setText(cardToken);
 			root.getChild("TransactionType").setText(transType);
@@ -160,9 +146,10 @@ public class Sale {
 
 		String formattedTime = Utils.generateDateTimeIPHostName().get(0);
 		String finalDate = Utils.generateDateTimeIPHostName().get(1);
-		String IP = Utils.generateDateTimeIPHostName().get(2);
-		String HostName = Utils.generateDateTimeIPHostName().get(3);
-
+		/*
+		 * String IP = Utils.generateDateTimeIPHostName().get(2); String HostName =
+		 * Utils.generateDateTimeIPHostName().get(3);
+		 */
 		try {
 			// Load the XML file
 			SAXBuilder saxBuilder = new SAXBuilder();

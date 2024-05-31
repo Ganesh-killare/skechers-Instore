@@ -16,8 +16,10 @@ public class Return {
 
 		String formattedTime = Utils.generateDateTimeIPHostName().get(0);
 		String finalDate = Utils.generateDateTimeIPHostName().get(1);
-		String IP = Utils.generateDateTimeIPHostName().get(2);
-		String HostName = Utils.generateDateTimeIPHostName().get(3);
+		/*
+		 * String IP = Utils.generateDateTimeIPHostName().get(2); String HostName =
+		 * Utils.generateDateTimeIPHostName().get(3);
+		 */
 
 		String transactionAmount = amt.get(2) + "~" + amt.get(2);
 
@@ -72,8 +74,10 @@ public class Return {
 		
 		String formattedTime = Utils.generateDateTimeIPHostName().get(0);
 		String finalDate = Utils.generateDateTimeIPHostName().get(1);
-		String IP = Utils.generateDateTimeIPHostName().get(2);
-		String HostName = Utils.generateDateTimeIPHostName().get(3);
+		/*
+		 * String IP = Utils.generateDateTimeIPHostName().get(2); String HostName =
+		 * Utils.generateDateTimeIPHostName().get(3);
+		 */
 		
 		String transactionAmount = amt + "~" + amt;
 		
@@ -129,9 +133,9 @@ public class Return {
 
 		String formattedTime = Utils.generateDateTimeIPHostName().get(0);
 		String finalDate = Utils.generateDateTimeIPHostName().get(1);
-		String IP = Utils.generateDateTimeIPHostName().get(2);
+	/*	String IP = Utils.generateDateTimeIPHostName().get(2);
 		String HostName = Utils.generateDateTimeIPHostName().get(3);
-
+*/
 		try {
 			// Load the XML file
 			SAXBuilder saxBuilder = new SAXBuilder();

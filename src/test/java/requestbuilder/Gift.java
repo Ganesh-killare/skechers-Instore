@@ -36,8 +36,10 @@ public class Gift {
 
 		String formattedTime =	Utils.generateDateTimeIPHostName().get(0);
 		String finalDate =	Utils.generateDateTimeIPHostName().get(1);
-		String IP =	Utils.generateDateTimeIPHostName().get(2);
-		String HostName =	Utils.generateDateTimeIPHostName().get(3);
+		/*
+		 * String IP = Utils.generateDateTimeIPHostName().get(2); String HostName =
+		 * Utils.generateDateTimeIPHostName().get(3);
+		 */
 		try {
 			// Load the XML file
 			SAXBuilder saxBuilder = new SAXBuilder();

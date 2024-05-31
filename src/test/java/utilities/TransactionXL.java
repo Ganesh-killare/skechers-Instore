@@ -253,6 +253,7 @@ public class TransactionXL {
 	 * } }
 	 */
 	public void writeTransactionData(List<String> data) {
+		int currentRow ;
 		
 		if (this.sheet == null) {
 			setupWorkBook();
@@ -260,8 +261,13 @@ public class TransactionXL {
 		
 		
 		
+		if(data.get(6).equalsIgnoreCase("CHK")) {
+			 currentRow = sheet.getLastRowNum();
+			
+		}else {
+			 currentRow = sheet.getLastRowNum() + 1;
+		}
 		
-		int currentRow = sheet.getLastRowNum() + 1;
 		int currentColumn = 1;
 
 		Row row = sheet.createRow(currentRow);

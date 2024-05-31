@@ -22,7 +22,7 @@ import utilities.Logger;
 import utilities.P_XL_Utility;
 import utilities.Utils;
 
-public class TC_WarDeployment extends BaseClass {
+public class TC_WarDeployment extends BaseClass {   
 	static List<String> amount;
 	String FILE_NAME = "SkechersWarTesting";
 	P_XL_Utility vXL = new P_XL_Utility();
@@ -38,11 +38,11 @@ public class TC_WarDeployment extends BaseClass {
 
 		String ticketResponse = receiveResponseFromAESDK();
 		// System.out.println(ticketResponse);
-		Logger.logRequestandRespons(ticketRequest, ticketResponse);
+	
 
 	}
 
-	@Test(invocationCount = 10, priority = 1)
+	@Test(invocationCount = 36, priority = 1)
 	public void testSale() throws Exception, IOException, InterruptedException {
 
 		String gcbRequest = GCB.Request(amount.get(2));
@@ -50,14 +50,14 @@ public class TC_WarDeployment extends BaseClass {
 		sendRequestToAESDK(gcbRequest);
 		String gcbResponse = receiveResponseFromAESDK();
 		// System.out.println(gcbResponse);
-		Logger.logRequestandRespons(gcbRequest, gcbResponse);
+		
 
-		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
+		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);    
 		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
 		xl.WriteGCBData(GCB_Parameters, gcbParameters);
 		String result = GCBPrameter.getParameterValue("ResponseText");
 
-		if (result.equalsIgnoreCase("APPROVAL")) {
+		if (result.equalsIgnoreCase("APPROVAL")|| result.equalsIgnoreCase("VALIDATION")) {
 
 			String salerequest = Sale.Request(GCBPrameter.getParameterValue("CardToken"), amount);
 
@@ -66,7 +66,7 @@ public class TC_WarDeployment extends BaseClass {
 			String saleResponse = receiveResponseFromAESDK();
 			// System.out.println(saleResponse);
 
-			Logger.logRequestandRespons(salerequest, saleResponse);
+		
 			// System.out.println(saleResponse);
 
 			Response_Parameters SaleParam = new Response_Parameters(saleResponse);
@@ -97,7 +97,7 @@ public class TC_WarDeployment extends BaseClass {
 
 	@Test(priority = 2)
 	public void delayTime() throws InterruptedException {
-		Thread.sleep(500);
+		Thread.sleep(5000);
 	}
 
 	@Test(priority = 3, dataProvider = "VoidData", dataProviderClass = Utils.class)
@@ -119,7 +119,7 @@ public class TC_WarDeployment extends BaseClass {
 				xl.writeTransactionReturnData(VoidData);
 
 			}
-			Logger.logRequestandRespons(returnRequest, returnResponse);
+		
 		}
 	}
 

@@ -15,8 +15,8 @@
   <TransactionDate>03212024</TransactionDate>
   <TransactionTime>061235</TransactionTime>
   <ECOMMInfo>
-    <MerchantIdentifier>100000017636</MerchantIdentifier>
-    <StoreID>90001</StoreID>
-    <TerminalID>93887867</TerminalID>
+    <MerchantIdentifier>100000066085</MerchantIdentifier>
+    <StoreID>08801</StoreID>
+    <TerminalID>54018992</TerminalID>
   </ECOMMInfo>
 </CloseTransactionRequest>
