@@ -24,29 +24,32 @@ import org.jdom2.output.XMLOutputter;
 import requestbuilder.GCB;
 import requestbuilder.Return;
 import requestbuilder.Sale;
+import responsevalidator.LogResponse;
 import responsevalidator.Response_Parameters;
 import utilities.Logger;
 import utilities.TransactionXL;
 
 public class BaseClass {
-
+	
+	
+// Normal Use 
+	
 	protected String[] parameters = { "CardToken", "CardIdentifier", "CRMToken", "CardEntryMode", "TransactionTypeCode",
 			"TransactionSequenceNumber", "CardType", "SubCardType", "TotalApprovedAmount", "ResponseText",
 			"ResponseCode", "TransactionIdentifier", "AurusPayTicketNum", "ApprovalCode", "ProcessorToken", "" }; // AID
 
 	// Gift Card
 
-	/*
-	 * protected String[] parameters = { "CardToken", "CardIdentifier", "CRMToken",
-	 * "CardEntryMode", "TransactionTypeCode", "TransactionSequenceNumber",
-	 * "CardType", "SubCardType", "TotalApprovedAmount", "ResponseText",
-	 * "ResponseCode", "TransactionIdentifier", "AurusPayTicketNum", "ApprovalCode",
-	 * "ProcessorToken", "BalanceAmount"};
-	 * 
-	 */
+	protected String[] Parameters = { "CardToken", "CardIdentifier", "CRMToken", "CardEntryMode", "TransactionTypeCode",
+			"TransactionSequenceNumber", "CardType", "SubCardType", "TotalApprovedAmount", "ResponseText",
+			"ResponseCode", "TransactionIdentifier", "AurusPayTicketNum", "ApprovalCode", "ProcessorToken",
+			"BalanceAmount" };
 
 	protected List<String> GCB_Parameters = new ArrayList<>(Arrays.asList(parameters));
+	protected List<String> giftParameters = new ArrayList<>(Arrays.asList(Parameters));
 	protected TransactionXL xl = new TransactionXL();
+	protected	String approvalText = "APPROVAL";
+	protected String validationText = "VALIDATION";
 
 //	private String serverAddress = "10.180.10.160";
 	private String serverAddress = getHostIP();
@@ -111,26 +114,40 @@ public class BaseClass {
 		}
 	}
 
-	public List<String> performSaleTransaction(List<String> amount) throws Exception {
+	public List<String> performGCB(String amount) throws Exception {
 
-		List<String> saleResult = new ArrayList<String>();
+		List<String> gcbResult = new ArrayList<String>();
 		try {
 
-			String gcbRequest = GCB.Request(amount.get(2));
+			String gcbRequest = GCB.Request(amount);
 			// System.out.println(gcbRequest);
 			sendRequestToAESDK(gcbRequest);
 			String gcbResponse = receiveResponseFromAESDK();
 			// System.out.println(gcbResponse);
 
 			Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
+
 			List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
 			xl.WriteGCBData(GCB_Parameters, gcbParameters);
-			String result = GCBPrameter.getParameterValue("ResponseText");
+			gcbResult.add(GCBPrameter.getParameterValue("ResponseText"));
+			gcbResult.add(GCBPrameter.getParameterValue("CardToken"));
 
-			if (result.equalsIgnoreCase("APPROVAL") || result.equalsIgnoreCase("VALIDATION")
-					|| result.equalsIgnoreCase("VALIDATION")) {
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return gcbResult;
+	}
 
-				String salerequest = Sale.Request(GCBPrameter.getParameterValue("CardToken"), amount);
+	public List<String> performSaleTransaction(List<String> amount) throws Exception {
+
+		List<String> saleResult = new ArrayList<String>();
+		try {
+
+			List<String> result = performGCB(amount.get(2));
+
+			if (result.get(0).equalsIgnoreCase(approvalText) || result.get(0).equalsIgnoreCase(validationText)) {
+
+				String salerequest = Sale.Request(result.get(1), amount);
 
 				sendRequestToAESDK(salerequest);
 				// System.out.println(salerequest);
@@ -154,12 +171,18 @@ public class BaseClass {
 				 * ATicketNumber = SaleParam.getParameterValue("AurusPayTicketNum"); String
 				 * ATransactionID = SaleParam.getParameterValue("TransactionIdentifier");
 				 */
+
 			}
 		} catch (Exception e) {
 			System.out.println("We are not able to performe sale transaction");
 
 		}
-		return saleResult;
+		if (!saleResult.isEmpty()) {
+			return saleResult;
+		} else {
+
+			return null;
+		}
 
 	}
 
@@ -167,22 +190,11 @@ public class BaseClass {
 
 		List<String> saleResult = new ArrayList<String>();
 		try {
+			List<String> result = performGCB(amount.get(2));
 
-			String gcbRequest = GCB.Request(amount.get(2));
-			// System.out.println(gcbRequest);
-			sendRequestToAESDK(gcbRequest);
-			String gcbResponse = receiveResponseFromAESDK();
-			// System.out.println(gcbResponse);
+			if (result.get(0).equalsIgnoreCase(approvalText) || result.get(0).equalsIgnoreCase(validationText)) {
 
-			Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
-			List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
-			xl.WriteGCBData(GCB_Parameters, gcbParameters);
-			String result = GCBPrameter.getParameterValue("ResponseText");
-
-			if (result.equalsIgnoreCase("APPROVAL") || result.equalsIgnoreCase("VALIDATION")
-					|| result.equalsIgnoreCase("VALIDATION")) {
-
-				String salerequest = Sale.refundRequest(GCBPrameter.getParameterValue("CardToken"), amount);
+				String salerequest = Sale.refundRequest(result.get(1), amount);
 
 				sendRequestToAESDK(salerequest);
 				// System.out.println(salerequest);
@@ -193,7 +205,7 @@ public class BaseClass {
 
 				Response_Parameters SaleParam = new Response_Parameters(saleResponse);
 				List<String> saleData = SaleParam.print_Response("RefundWithoutSale", parameters);
-				saleData.add(1, "Sale");
+				saleData.add(1, "RefundWithoutSale");
 				xl.writeTransactionData(saleData);
 
 				saleResult.add(SaleParam.getParameterValue("ResponseText"));
@@ -211,7 +223,12 @@ public class BaseClass {
 			System.out.println("We are not able to performe sale transaction");
 
 		}
-		return saleResult;
+		if (!saleResult.isEmpty()) {
+			return saleResult;
+		} else {
+
+			return null;
+		}
 
 	}
 
@@ -271,7 +288,7 @@ public class BaseClass {
 				Response_Parameters returnRes = new Response_Parameters(returnResponse);
 				List<String> returnData = returnRes.print_Response("Void", parameters);
 				returnData.add(1, "Void");
-				xl.writeTransactionData(returnData);   
+				xl.writeTransactionData(returnData);
 			}
 		} catch (Exception e) {
 			System.out.println("We are not able to perform refund ");
@@ -287,10 +304,10 @@ public class BaseClass {
 			String returnResponse = receiveResponseFromAESDK();
 			Response_Parameters returnRes = new Response_Parameters(returnResponse);
 			List<String> returnData = returnRes.print_Response("Cancel Last", parameters);
-			returnData.add(1, "Cancel Last");   
-			xl.writeTransactionData(returnData);    
+			returnData.add(1, "Cancel Last");
+			xl.writeTransactionData(returnData);
 		} catch (Exception e) {
-			//System.out.println(e);
-		}   
+			// System.out.println(e);
+		}
 	}
 }

@@ -20,7 +20,7 @@ public class TransactionXL {
 	Workbook workbook;
 	Sheet sheet;
 
-	int startRow ;
+	int startRow;
 	List<CellRangeAddress> mergedRegions = new ArrayList<>();
 
 	public void setupWorkBook() {
@@ -30,18 +30,16 @@ public class TransactionXL {
 	}
 
 	public void WriteGCBData(List<String> parameters, List<String> data) {
-		
+
 		parameters.add(1, "TransType");
-		 String transType = "Get Card BIN ";
-          
-	
-		
+		String transType = "Get Card BIN ";
+
 		if (this.sheet == null) {
 			setupWorkBook();
 		}
-		
-    startRow = sheet.getLastRowNum()+3;
-  
+
+		startRow = sheet.getLastRowNum() + 3;
+
 		if (startRow == 2) {
 
 			Row headerRow = sheet.createRow(0);
@@ -139,7 +137,7 @@ public class TransactionXL {
 				nonZeroCellStyle.setFont(nonZeroFont);
 				row.createCell(11).setCellValue(data.get(10));
 				row.getCell(11).setCellStyle(nonZeroCellStyle);
-				
+
 			}
 
 			row.createCell(12).setCellValue(data.get(11));
@@ -253,21 +251,14 @@ public class TransactionXL {
 	 * } }
 	 */
 	public void writeTransactionData(List<String> data) {
-		int currentRow ;
-		
+		int currentRow;
+
 		if (this.sheet == null) {
 			setupWorkBook();
 		}
-		
-		
-		
-		if(data.get(6).equalsIgnoreCase("CHK")) {
-			 currentRow = sheet.getLastRowNum();
-			
-		}else {
-			 currentRow = sheet.getLastRowNum() + 1;
-		}
-		
+
+		currentRow = sheet.getLastRowNum() + 1;
+
 		int currentColumn = 1;
 
 		Row row = sheet.createRow(currentRow);
@@ -317,30 +308,27 @@ public class TransactionXL {
 				cellStyle.setFont(font);
 				cell.setCellStyle(cellStyle);
 			}
-			
 
 		}
 
 	}
+
 	public void writeTransactionReturnData(List<String> data) {
-		
+
 		if (this.sheet == null) {
 			setupWorkBook();
 		}
-		
-		
-		
-		
+
 		int currentRow = sheet.getLastRowNum() + 3;
 		int currentColumn = 1;
-		
+
 		Row row = sheet.createRow(currentRow);
 		for (int i = 1; i < data.size(); i++) {
-			
+
 			Cell cell = row.createCell(currentColumn++);
 			String value = data.get(i);
 			cell.setCellValue(value);
-			
+
 			if (i == 1) {
 				CellStyle cellStyle = workbook.createCellStyle();
 				Font font = workbook.createFont();
@@ -349,7 +337,7 @@ public class TransactionXL {
 				cellStyle.setFont(font);
 				cell.setCellStyle(cellStyle);
 			}
-			
+
 			if (i == 10 && "APPROVAL".equalsIgnoreCase(value)) {
 				CellStyle cellStyle = workbook.createCellStyle();
 				Font font = workbook.createFont();
@@ -365,7 +353,7 @@ public class TransactionXL {
 				cellStyle.setFont(font);
 				cell.setCellStyle(cellStyle);
 			}
-			
+
 			if (i == 11 && value.equalsIgnoreCase("00000")) {
 				CellStyle cellStyle = workbook.createCellStyle();
 				Font font = workbook.createFont();
@@ -381,16 +369,14 @@ public class TransactionXL {
 				cellStyle.setFont(font);
 				cell.setCellStyle(cellStyle);
 			}
-			
-			
+
 		}
-		
+
 	}
 
-	
-
 	public void saveExcelFile(String fileName) {
-		try (FileOutputStream outputStream = new FileOutputStream("./transactionsXLfiles\\" + Utils.setFileName(fileName))) {
+		try (FileOutputStream outputStream = new FileOutputStream(
+				"./transactionsXLfiles\\" + Utils.setFileName(fileName))) {
 			workbook.write(outputStream);
 			System.out.println("=".repeat(150));
 		} catch (IOException e) {

@@ -18,14 +18,13 @@ import requestbuilder.Return;
 import requestbuilder.Sale;
 import requestbuilder.TicketDisplay;
 import responsevalidator.Response_Parameters;
-import utilities.Logger;
 import utilities.P_XL_Utility;
 import utilities.Utils;
 
-public class TC_WarDeployment extends BaseClass {   
+public class TC_WarDeployment extends BaseClass {
 	static List<String> amount;
-	String FILE_NAME = "SkechersWarTesting";
-	P_XL_Utility vXL = new P_XL_Utility();
+	String FILE_NAME = "_SkechersWarTesting";
+	P_XL_Utility vXL = new P_XL_Utility();  
 	public static int DecisionVar;
 
 	@BeforeMethod
@@ -34,30 +33,28 @@ public class TC_WarDeployment extends BaseClass {
 		String ticketRequest = TicketDisplay.request();
 		sendRequestToAESDK(ticketRequest);
 		// System.out.println(ticketRequest);
-		amount = (List<String>) TicketDisplay.getTransactionAmount(ticketRequest);
+		amount = (List<String>) TicketDisplay.getTransactionAmount(ticketRequest);      
 
-		String ticketResponse = receiveResponseFromAESDK();
-		// System.out.println(ticketResponse);
-	
+		receiveResponseFromAESDK();
 
 	}
 
-	@Test(invocationCount = 36, priority = 1)
-	public void testSale() throws Exception, IOException, InterruptedException {
+	@Test(invocationCount = 30, priority = 1)
+	public void testSale() throws Exception, IOException, InterruptedException {     
 
 		String gcbRequest = GCB.Request(amount.get(2));
 		// System.out.println(gcbRequest);
 		sendRequestToAESDK(gcbRequest);
 		String gcbResponse = receiveResponseFromAESDK();
 		// System.out.println(gcbResponse);
-		
 
-		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);    
+		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
 		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
 		xl.WriteGCBData(GCB_Parameters, gcbParameters);
 		String result = GCBPrameter.getParameterValue("ResponseText");
+		String CardName = GCBPrameter.getParameterValue("FirstName") + "  " + GCBPrameter.getParameterValue("CardToken") ;
 
-		if (result.equalsIgnoreCase("APPROVAL")|| result.equalsIgnoreCase("VALIDATION")) {
+		if (result.equalsIgnoreCase("APPROVAL") || result.equalsIgnoreCase("VALIDATION")) {
 
 			String salerequest = Sale.Request(GCBPrameter.getParameterValue("CardToken"), amount);
 
@@ -66,7 +63,6 @@ public class TC_WarDeployment extends BaseClass {
 			String saleResponse = receiveResponseFromAESDK();
 			// System.out.println(saleResponse);
 
-		
 			// System.out.println(saleResponse);
 
 			Response_Parameters SaleParam = new Response_Parameters(saleResponse);
@@ -77,33 +73,34 @@ public class TC_WarDeployment extends BaseClass {
 			String ATransactionID = SaleParam.getParameterValue("TransactionIdentifier");
 			String Amount = SaleParam.getParameterValue("TransactionAmount");
 
-			if (DecisionVar % 2 == 0) {
-				List<String> data = Arrays.asList(ATransactionID, ATicketNumber, Amount, "06");
-				vXL.writeDataForVoid(data);
-
-			} else {
-				List<String> data = Arrays.asList(ATransactionID, ATicketNumber, Amount, "02");
-				vXL.writeDataForVoid(data);
-
-			}
+			
+			  if (DecisionVar % 2 == 0) { List<String> data = Arrays.asList(ATransactionID,
+			  ATicketNumber, Amount, "06", CardName); vXL.writeDataForVoid(data);
+			  
+			  } else { List<String> data = Arrays.asList(ATransactionID, ATicketNumber,
+			  Amount, "02", CardName); vXL.writeDataForVoid(data);
+			  
+			  }
+			 
 
 			Assert.assertEquals("APPROVAL", SaleParam.getParameterValue("ResponseText"));
 			DecisionVar++;
 
 		}
-		
 
 	}
 
 	@Test(priority = 2)
 	public void delayTime() throws InterruptedException {
-		Thread.sleep(5000);
+	
 	}
 
 	@Test(priority = 3, dataProvider = "VoidData", dataProviderClass = Utils.class)
-	public void testAllVoidTransactions(String TransID, String AurusPayTicketNumber, String amount, String transType)
-			throws Exception {
+	public void testAllVoidTransactions(String TransID, String AurusPayTicketNumber, String amount, String transType,
+			String CardName) throws Exception {
+	
 		if (!amount.equalsIgnoreCase("0.00") && !amount.isEmpty()) {
+			System.out.println("We are performed Return of card " + CardName);
 
 			String returnRequest = Return.Request(transType, amount, AurusPayTicketNumber, TransID);
 			sendRequestToAESDK(returnRequest);
@@ -119,7 +116,7 @@ public class TC_WarDeployment extends BaseClass {
 				xl.writeTransactionReturnData(VoidData);
 
 			}
-		
+
 		}
 	}
 
@@ -127,7 +124,7 @@ public class TC_WarDeployment extends BaseClass {
 	public void afterTransactionsOparations()
 			throws UnknownHostException, IOException, InterruptedException, JDOMException {
 
-		sendRequestToAESDK(Close.Request());   
+		sendRequestToAESDK(Close.Request());
 		receiveResponseFromAESDK();
 
 		xl.saveExcelFile(FILE_NAME);

@@ -74,7 +74,7 @@ public class TicketDisplay {
 		String gcbAmount = properties.getProperty("amount");
 		if(gcbAmount.equalsIgnoreCase("0.00")) {
      
-           int totalAmount = faker.random().nextInt(30, 39);
+           int totalAmount = faker.random().nextInt(10, 100);
         
         
 		int discountAmount = (totalAmount * 20) / 100;

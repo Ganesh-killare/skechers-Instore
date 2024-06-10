@@ -21,10 +21,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 // This class calculates transaction time
 public class LogParser {
 
-	private String ReqOfPOS =  null ;             //" Request Received From POS :";
-	private String ResOfPOS =    null ;//" POS response sent successfully.";
-	private String ReqOfPED = " POS request sent to PED ==> ";
-	private String ResOfPED = " Receive POS Response From PED ==> ";
+	private String ReqOfPOS =  "Request Received From POS : <TransRequest>" ;             //" Request Received From POS :";
+	private String ResOfPOS =    "Response sent to POS: <TransResponse>" ;//" POS response sent successfully.";
+	
+	  private String ReqOfPED = null;
+	  private String ResOfPED = null;
+	 
 
 	private static final String LOG_FILE_PATH = "./src/test/resources/AESDK.log";
 	private static final String EXCEL_FILE_PATH = "./transactionsTime.xlsx";
@@ -78,9 +80,10 @@ public class LogParser {
 						if (messageType.equals(ReqOfPOS) || messageType.equals(ReqOfPED)) {
 							requestReceivedTimestamp = timestamp;
 							requestMessage = line;
-							requestType = extractRequestType(line);
+							//requestType = extractRequestType(line);
 						} else if (messageType.equals(ResOfPOS) || messageType.equals(ResOfPED)) {
 							if (requestReceivedTimestamp != null) {
+								requestType = extractRequestType(line);
 								processTransaction(requestReceivedTimestamp, timestamp, requestMessage, line,
 										requestType);
 								requestReceivedTimestamp = null;
@@ -126,29 +129,33 @@ public class LogParser {
 	private String getMessageType(String line) {
 
 		// for the END TO END transaction time
-		/*
-		 * if (line.contains(ReqOfPOS)) { return ReqOfPOS; } else if
-		 * (line.contains(ResOfPOS)) { return ResOfPOS; }
-		 */
+		
+		  if (line.contains(ReqOfPOS)) { return ReqOfPOS; } else if
+		  (line.contains(ResOfPOS)) { return ResOfPOS; }
+		 
 		// For the CCT transaction Time
-
-		if (line.contains(ReqOfPED)) {
-			return ReqOfPED;
-		} else if (line.contains(ResOfPED)) {
-			return ResOfPED;
-		}
+		/*
+		 * if (line.contains(ReqOfPED)) { return ReqOfPED; } else if
+		 * (line.contains(ResOfPED)) { return ResOfPED; }
+		 */
 
 		return null;
 	}
 
+	/*
+	 * private String extractRequestType(String line) { int startIndex =
+	 * line.indexOf(": < ") + 3; // Add 3 to include the length of ": < " int
+	 * endIndex = line.indexOf('>', startIndex); // Look for '>' after ": < " if
+	 * (endIndex == -1) { endIndex = line.length(); } return line.substring(131,
+	 * endIndex); //return ""; }
+	 */
+	
 	private String extractRequestType(String line) {
-		int startIndex = line.indexOf(": < ") + 3; // Add 3 to include the length of ": < "
-		int endIndex = line.indexOf('>', startIndex); // Look for '>' after ": < "
-		if (endIndex == -1) {
-			endIndex = line.length();
-		}
-	//	return line.substring(131, endIndex);
-		return "";
+	    int startIndex = line.indexOf('<');
+	    if (startIndex == -1) {
+	        return ""; // If '<' is not found, return an empty string
+	    }
+	    return line.substring(startIndex); // Extract from '<' to the end of the line
 	}
 
 	private void writeTransactionTimeData(List<String> data) {  

@@ -14,15 +14,13 @@ import requestbuilder.Close;
 import requestbuilder.GCB;
 import requestbuilder.Gift;
 import requestbuilder.Return;
-import requestbuilder.Sale;
 import requestbuilder.TicketDisplay;
 import responsevalidator.Response_Parameters;
-import utilities.Logger;
 
-public class TC_GiftCard extends BaseClass {
+public class TC_GiftCard extends BaseClass {  
 
 	static List<String> amount;
-	String FILE_NAME = "Skechers";   
+	String FILE_NAME = "Gift_Skechers";   
 
 	@BeforeMethod
 	public void ticketDisplayAndGetCardBin() throws Exception, IOException, InterruptedException {
@@ -32,7 +30,7 @@ public class TC_GiftCard extends BaseClass {
 		// System.out.println(ticketRequest);
 		amount = (List<String>) TicketDisplay.getTransactionAmount(ticketRequest);
 
-		String ticketResponse = receiveResponseFromAESDK();
+	receiveResponseFromAESDK();
 		// System.out.println(ticketResponse);
 	
 
@@ -48,8 +46,8 @@ public class TC_GiftCard extends BaseClass {
 	
 
 		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
-		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
-		xl.WriteGCBData(GCB_Parameters, gcbParameters);
+		List<String> gcbParameters = GCBPrameter.print_Response("GCB", Parameters);
+		xl.WriteGCBData(giftParameters, gcbParameters);
 		String result = GCBPrameter.getParameterValue("ResponseText");
 
 		if (result.equalsIgnoreCase("APPROVAL")) {
@@ -65,12 +63,14 @@ public class TC_GiftCard extends BaseClass {
 			// System.out.println(giftResponse);
 
 			Response_Parameters giftParam = new Response_Parameters(giftResponse);
-			List<String> giftData = giftParam.print_Response("Activation ", parameters);
+			List<String> giftData = giftParam.print_Response("Activation ", Parameters);
 			giftData.add(1, " Activation ");
 			xl.writeTransactionData(giftData);
-			String saleResult = giftParam.getParameterValue("ResponseText");
-			String ATicketNumber = giftParam.getParameterValue("AurusPayTicketNum");
-			String ATransactionID = giftParam.getParameterValue("TransactionIdentifier");
+			/*
+			 * String saleResult = giftParam.getParameterValue("ResponseText"); String
+			 * ATicketNumber = giftParam.getParameterValue("AurusPayTicketNum"); String
+			 * ATransactionID = giftParam.getParameterValue("TransactionIdentifier");
+			 */
 		}
 	}
 
@@ -84,8 +84,8 @@ public class TC_GiftCard extends BaseClass {
 	
 
 		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
-		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
-		xl.WriteGCBData(GCB_Parameters, gcbParameters);
+		List<String> gcbParameters = GCBPrameter.print_Response("GCB", Parameters);
+		xl.WriteGCBData(giftParameters, gcbParameters);
 		String result = GCBPrameter.getParameterValue("ResponseText");
 
 		if (result.equalsIgnoreCase("APPROVAL")) {
@@ -101,12 +101,14 @@ public class TC_GiftCard extends BaseClass {
 			// System.out.println(giftResponse);
 
 			Response_Parameters giftParam = new Response_Parameters(giftResponse);
-			List<String> giftData = giftParam.print_Response("Reload ", parameters);
+			List<String> giftData = giftParam.print_Response("Reload ", Parameters);
 			giftData.add(1, " Reload ");
 			xl.writeTransactionData(giftData);
-			String saleResult = giftParam.getParameterValue("ResponseText");
-			String ATicketNumber = giftParam.getParameterValue("AurusPayTicketNum");
-			String ATransactionID = giftParam.getParameterValue("TransactionIdentifier");
+			/*
+			 * String saleResult = giftParam.getParameterValue("ResponseText"); String
+			 * ATicketNumber = giftParam.getParameterValue("AurusPayTicketNum"); String
+			 * ATransactionID = giftParam.getParameterValue("TransactionIdentifier");
+			 */
 		}
 
 	}
@@ -121,8 +123,8 @@ public class TC_GiftCard extends BaseClass {
 	
 
 		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
-		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
-		xl.WriteGCBData(GCB_Parameters, gcbParameters);
+		List<String> gcbParameters = GCBPrameter.print_Response("GCB", Parameters);
+		xl.WriteGCBData(giftParameters, gcbParameters);
 		String result = GCBPrameter.getParameterValue("ResponseText");
 
 		if (result.equalsIgnoreCase("APPROVAL")) {
@@ -138,13 +140,14 @@ public class TC_GiftCard extends BaseClass {
 			// System.out.println(giftResponse);
 
 			Response_Parameters giftParam = new Response_Parameters(giftResponse);
-			List<String> giftData = giftParam.print_Response("Balance Inquiry" + " ", parameters);
+			List<String> giftData = giftParam.print_Response("Balance Inquiry" + " ", Parameters);
 			giftData.add(1, " Balance Inquiry ");
 			xl.writeTransactionData(giftData);
-			String saleResult = giftParam.getParameterValue("ResponseText");
-			String ATicketNumber = giftParam.getParameterValue("AurusPayTicketNum");
-			String ATransactionID = giftParam.getParameterValue("TransactionIdentifier");
-		}
+			/*
+			 * String saleResult = giftParam.getParameterValue("ResponseText"); String
+			 * ATicketNumber = giftParam.getParameterValue("AurusPayTicketNum"); String
+			 * ATransactionID = giftParam.getParameterValue("TransactionIdentifier");
+			 */		}
 	}
 
 	@Test(priority = 4)
@@ -157,8 +160,8 @@ public class TC_GiftCard extends BaseClass {
 	
 
 		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
-		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
-		xl.WriteGCBData(GCB_Parameters, gcbParameters);
+		List<String> gcbParameters = GCBPrameter.print_Response("GCB", Parameters);
+		xl.WriteGCBData(giftParameters, gcbParameters);
 		String result = GCBPrameter.getParameterValue("ResponseText");
 
 		if (result.equalsIgnoreCase("APPROVAL")) {
@@ -174,7 +177,7 @@ public class TC_GiftCard extends BaseClass {
 			// System.out.println(giftResponse);
 
 			Response_Parameters giftParam = new Response_Parameters(giftResponse);
-			List<String> giftData = giftParam.print_Response("Redeem" + " ", parameters);
+			List<String> giftData = giftParam.print_Response("Redeem" + " ", Parameters);
 			giftData.add(1, "Redeem");
 			xl.writeTransactionData(giftData);
 			String saleResult = giftParam.getParameterValue("ResponseText");
@@ -183,15 +186,14 @@ public class TC_GiftCard extends BaseClass {
 			if (saleResult.equalsIgnoreCase("APPROVAL")) {
 
 				// Refund Transactions
-
-				String returnRequest = Return.Request("06", amount, ATicketNumber, ATransactionID);
-				sendRequestToAESDK(returnRequest);
-				String returnResponse = receiveResponseFromAESDK();
-				Response_Parameters returnRes = new Response_Parameters(returnResponse);
-				List<String> returnData = returnRes.print_Response("Void ", parameters);
-				returnData.add(1, "Void");
-				xl.writeTransactionData(returnData);
 				
+				  String returnRequest = Return.Request("06", amount, ATicketNumber,
+				  ATransactionID); sendRequestToAESDK(returnRequest); String returnResponse =
+				  receiveResponseFromAESDK(); Response_Parameters returnRes = new
+				  Response_Parameters(returnResponse); List<String> returnData =
+				  returnRes.print_Response("Void ", Parameters); returnData.add(1, "Void");
+				  xl.writeTransactionData(returnData);
+				 
 
 			}
 		}
@@ -205,8 +207,8 @@ public class TC_GiftCard extends BaseClass {
 	
 		
 		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
-		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
-		xl.WriteGCBData(GCB_Parameters, gcbParameters);
+		List<String> gcbParameters = GCBPrameter.print_Response("GCB", Parameters);
+		xl.WriteGCBData(giftParameters, gcbParameters);
 		String result = GCBPrameter.getParameterValue("ResponseText");
 		
 		if (result.equalsIgnoreCase("APPROVAL")) {
@@ -222,7 +224,7 @@ public class TC_GiftCard extends BaseClass {
 			// System.out.println(giftResponse);
 			
 			Response_Parameters giftParam = new Response_Parameters(giftResponse);
-			List<String> giftData = giftParam.print_Response("Redeem" + " ", parameters);
+			List<String> giftData = giftParam.print_Response("Redeem" + " ", Parameters);
 			giftData.add(1, "Redeem");
 			xl.writeTransactionData(giftData);
 			String saleResult = giftParam.getParameterValue("ResponseText");
@@ -236,7 +238,7 @@ public class TC_GiftCard extends BaseClass {
 				sendRequestToAESDK(giftCancelLast);
 				String returnResponse = receiveResponseFromAESDK();
 				Response_Parameters returnRes = new Response_Parameters(returnResponse);
-				List<String> returnData = returnRes.print_Response("CancelLast ", parameters);
+				List<String> returnData = returnRes.print_Response("CancelLast ", Parameters);
 				returnData.add(1, "CancelLast");
 				xl.writeTransactionData(returnData);
 				
@@ -255,8 +257,8 @@ public class TC_GiftCard extends BaseClass {
 	
 
 		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
-		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
-		xl.WriteGCBData(GCB_Parameters, gcbParameters);
+		List<String> gcbParameters = GCBPrameter.print_Response("GCB", Parameters);
+		xl.WriteGCBData(giftParameters, gcbParameters);
 		String result = GCBPrameter.getParameterValue("ResponseText");
 
 		if (result.equalsIgnoreCase("APPROVAL")) {
@@ -272,7 +274,7 @@ public class TC_GiftCard extends BaseClass {
 			// System.out.println(giftResponse);
 
 			Response_Parameters giftParam = new Response_Parameters(giftResponse);
-			List<String> giftData = giftParam.print_Response("Return" + " ", parameters);
+			List<String> giftData = giftParam.print_Response("Return" + " ", Parameters);
 			giftData.add(1, "Return");
 			xl.writeTransactionData(giftData);
 			
@@ -290,8 +292,8 @@ public class TC_GiftCard extends BaseClass {
 	
 
 		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
-		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
-		xl.WriteGCBData(GCB_Parameters, gcbParameters);
+		List<String> gcbParameters = GCBPrameter.print_Response("GCB", Parameters);
+		xl.WriteGCBData(giftParameters, gcbParameters);
 		String result = GCBPrameter.getParameterValue("ResponseText");
 
 		if (result.equalsIgnoreCase("APPROVAL")) {
@@ -307,7 +309,7 @@ public class TC_GiftCard extends BaseClass {
 			// System.out.println(giftResponse);
 
 			Response_Parameters giftParam = new Response_Parameters(giftResponse);
-			List<String> giftData = giftParam.print_Response("CashOut" + " ", parameters);
+			List<String> giftData = giftParam.print_Response("CashOut" + " ", Parameters);
 			giftData.add(1, " CashOut");
 			xl.writeTransactionData(giftData);
 
