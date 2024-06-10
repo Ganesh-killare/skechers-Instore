@@ -8,3 +8,7 @@
 # Ignore log files
 *.log
 *.xlsx
+
+
+# Ignore .xlsx files in the transactionsXLfiles folder
+transactionsXLfiles/*.xlsx
