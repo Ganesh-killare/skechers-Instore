@@ -1,0 +1,24 @@
+# Ignore build output directories
+/build/
+/out/
+/target/
+
+
+
+# Ignore log files
+*.log
+*.xlsx
+
+# Ignore temporary files
+*.tmp
+*.bak
+*.swp
+
+# Ignore Maven specific files
+/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
