@@ -20,23 +20,30 @@ import org.jdom2.JDOMException;
 import org.jdom2.input.SAXBuilder;
 import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
+import reporting.BaseReport;
+import requestbuilder.Close;
 import requestbuilder.GCB;
 import requestbuilder.Return;
 import requestbuilder.Sale;
+import requestbuilder.TicketDisplay;
 import responsevalidator.LogResponse;
 import responsevalidator.Response_Parameters;
+import utilities.ConfigReader;
 import utilities.Logger;
 import utilities.TransactionXL;
+import utilities.Utils;
 
 public class BaseClass {
-	
-	
+
 // Normal Use 
-	
+
 	protected String[] parameters = { "CardToken", "CardIdentifier", "CRMToken", "CardEntryMode", "TransactionTypeCode",
 			"TransactionSequenceNumber", "CardType", "SubCardType", "TotalApprovedAmount", "ResponseText",
-			"ResponseCode", "TransactionIdentifier", "AurusPayTicketNum", "ApprovalCode", "ProcessorToken", "" }; // AID
+			"ResponseCode", "TransactionIdentifier", "AurusPayTicketNum", "ApprovalCode", "ProcessorToken", "AID" }; // AID
 
 	// Gift Card
 
@@ -48,10 +55,10 @@ public class BaseClass {
 	protected List<String> GCB_Parameters = new ArrayList<>(Arrays.asList(parameters));
 	protected List<String> giftParameters = new ArrayList<>(Arrays.asList(Parameters));
 	protected TransactionXL xl = new TransactionXL();
-	protected	String approvalText = "APPROVAL";
+	protected String approvalText = "APPROVAL";
 	protected String validationText = "VALIDATION";
 
-//	private String serverAddress = "10.180.10.160";
+//	private String serverAddress = "10.190.10.205";
 	private String serverAddress = getHostIP();
 
 	private int serverPort = 15583;
@@ -114,6 +121,22 @@ public class BaseClass {
 		}
 	}
 
+	public static List<String> amount;
+	public String FILE_NAME = "Skechers";
+
+	@BeforeMethod
+	public void ticketDisplay() throws Exception, IOException, InterruptedException {
+
+		String ticketRequest = TicketDisplay.request();
+		sendRequestToAESDK(ticketRequest);
+		// System.out.println(ticketRequest);
+		amount = (List<String>) TicketDisplay.getTransactionAmount(ticketRequest);
+
+		receiveResponseFromAESDK();
+		// System.out.println(ticketResponse);
+
+	}
+
 	public List<String> performGCB(String amount) throws Exception {
 
 		List<String> gcbResult = new ArrayList<String>();
@@ -158,6 +181,16 @@ public class BaseClass {
 
 				Response_Parameters SaleParam = new Response_Parameters(saleResponse);
 				List<String> saleData = SaleParam.print_Response(" Sale  ", parameters);
+
+				// Reporting
+				
+				if(ConfigReader.isReportingEnabled()) {
+					System.out.println(ConfigReader.isReportingEnabled());
+				BaseReport.Transaction_Reporting(saleData, salerequest, saleResponse);
+				}
+				
+				String transdata = Utils.convertListToString(saleData, ",");
+
 				saleData.add(1, "Sale");
 				xl.writeTransactionData(saleData);
 
@@ -166,15 +199,15 @@ public class BaseClass {
 				saleResult.add(SaleParam.getParameterValue("AurusPayTicketNum"));
 				saleResult.add(SaleParam.getParameterValue("TransactionIdentifier"));
 
-				/*
-				 * String saleResult = SaleParam.getParameterValue("ResponseText"); String
-				 * ATicketNumber = SaleParam.getParameterValue("AurusPayTicketNum"); String
-				 * ATransactionID = SaleParam.getParameterValue("TransactionIdentifier");
-				 */
+				// Assertions
+				// Assertions
 
+				Assert.assertTrue(saleResult.get(0).equals(approvalText) || saleResult.get(0).equals(validationText),
+						"We are not getting ResponseText as " + approvalText + " or " + validationText + " "
+								+ transdata);
 			}
 		} catch (Exception e) {
-			System.out.println("We are not able to performe sale transaction");
+			System.out.println("We are not able to performe sale transaction" + e);
 
 		}
 		if (!saleResult.isEmpty()) {
@@ -205,6 +238,14 @@ public class BaseClass {
 
 				Response_Parameters SaleParam = new Response_Parameters(saleResponse);
 				List<String> saleData = SaleParam.print_Response("RefundWithoutSale", parameters);
+
+				// Reporting
+				if(ConfigReader.isReportingEnabled()) {
+					System.out.println(ConfigReader.isReportingEnabled());
+				BaseReport.Transaction_Reporting(saleData, salerequest, saleResponse);
+				}
+				String transdata = Utils.convertListToString(saleData, ",");
+
 				saleData.add(1, "RefundWithoutSale");
 				xl.writeTransactionData(saleData);
 
@@ -213,11 +254,12 @@ public class BaseClass {
 				saleResult.add(SaleParam.getParameterValue("AurusPayTicketNum"));
 				saleResult.add(SaleParam.getParameterValue("TransactionIdentifier"));
 
-				/*
-				 * String saleResult = SaleParam.getParameterValue("ResponseText"); String
-				 * ATicketNumber = SaleParam.getParameterValue("AurusPayTicketNum"); String
-				 * ATransactionID = SaleParam.getParameterValue("TransactionIdentifier");
-				 */
+				// Assertions
+
+				Assert.assertTrue(saleResult.get(0).equals(approvalText) || saleResult.get(0).equals(validationText),
+						"We are not getting ResponseText as " + approvalText + " or " + validationText + " "
+								+ transdata);
+
 			}
 		} catch (Exception e) {
 			System.out.println("We are not able to performe sale transaction");
@@ -252,7 +294,15 @@ public class BaseClass {
 			saleResult.add(SaleParam.getParameterValue("TotalApprovedAmount"));
 			saleResult.add(SaleParam.getParameterValue("AurusPayTicketNum"));
 			saleResult.add(SaleParam.getParameterValue("TransactionIdentifier"));
+			String ResponseCode = SaleParam.getParameterValue("TransactionIdentifier");
 
+			// Assertions
+			/*
+			 * Assert.assertTrue(saleResult.get(0).equals(approvalText) ||
+			 * saleResult.get(0).equals(validationText),
+			 * "We are not getting ResponseText as " + approvalText + " or " +
+			 * validationText + " "+ transdata );
+			 */
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
@@ -269,11 +319,24 @@ public class BaseClass {
 				String returnResponse = receiveResponseFromAESDK();
 				Response_Parameters returnRes = new Response_Parameters(returnResponse);
 				List<String> returnData = returnRes.print_Response("Refund", parameters);
+
+				if(ConfigReader.isReportingEnabled()) {
+				BaseReport.Transaction_Reporting(returnData, returnRequest, returnResponse);
+				}
+				String transdata = Utils.convertListToString(saleData, ",");
+				
+
 				returnData.add(1, "Refund");
 				xl.writeTransactionData(returnData);
+
+				// Assertions
+				String responseText = returnRes.getParameterValue("ResponseText");
+				Assert.assertTrue(responseText.equals(approvalText) || responseText.equals(validationText),
+						"We are not getting ResponseText as " + approvalText + " or " + validationText + " "
+								+ transdata);
 			}
 		} catch (Exception e) {
-			System.out.println("We are not able to perform refund ");
+			System.out.println("We are not able to perform refund " + e);
 		}
 
 	}
@@ -287,8 +350,20 @@ public class BaseClass {
 				String returnResponse = receiveResponseFromAESDK();
 				Response_Parameters returnRes = new Response_Parameters(returnResponse);
 				List<String> returnData = returnRes.print_Response("Void", parameters);
+				
+				if(ConfigReader.isReportingEnabled()) {
+				BaseReport.Transaction_Reporting(returnData, returnRequest, returnResponse);
+				}
+				String transdata = Utils.convertListToString(saleData, ",");
+
 				returnData.add(1, "Void");
 				xl.writeTransactionData(returnData);
+
+				// Assertions
+				String responseText = returnRes.getParameterValue("ResponseText");
+				Assert.assertTrue(responseText.equals(approvalText) || responseText.equals(validationText),
+						"We are not getting ResponseText as " + approvalText + " or " + validationText + " "
+								+ transdata);
 			}
 		} catch (Exception e) {
 			System.out.println("We are not able to perform refund ");
@@ -310,4 +385,6 @@ public class BaseClass {
 			// System.out.println(e);
 		}
 	}
+
+
 }

@@ -19,31 +19,19 @@ import responsevalidator.Response_Parameters;
 
 public class TC_TestCases extends BaseClass {
 
-	static List<String> amount;
-	String FILE_NAME = "Skechers";
-
-	@BeforeMethod
-	public void ticketDisplay() throws Exception, IOException, InterruptedException {
-
-		String ticketRequest = TicketDisplay.request();
-		sendRequestToAESDK(ticketRequest);
-		// System.out.println(ticketRequest);
-		amount = (List<String>) TicketDisplay.getTransactionAmount(ticketRequest);
-
-		receiveResponseFromAESDK();
-		// System.out.println(ticketResponse);
-
-	}
-
-	@Test(invocationCount = 1)
+	
+	@Test(invocationCount = 2)
 	public void testRefundOfSale() throws Exception, IOException, InterruptedException {
+		 String methodName = new Exception().getStackTrace()[0].getMethodName();
+	        System.out.println("Method name: " + methodName);
 
 		try {
+		   
 			List<String> saleResult = performSaleTransaction(amount);
 
 			if (saleResult.get(0).equalsIgnoreCase(approvalText) || saleResult.get(0).equalsIgnoreCase(validationText)) {
 
-				Thread.sleep(3000);
+		//		Thread.sleep(3000);
 
 				performRefundTransaction(saleResult);
 			}
@@ -70,7 +58,7 @@ public class TC_TestCases extends BaseClass {
 
 	}
 
-	@Test(invocationCount = 8)
+	@Test(invocationCount = 2)
 	public void testVoidOfRefundWithoutSale() throws Exception, IOException, InterruptedException {
 		try {
 			List<String> saleResult = performRefundWithoutSaleTransaction(amount);
@@ -87,7 +75,7 @@ public class TC_TestCases extends BaseClass {
 
 	}
 
-	@Test(invocationCount = 1)
+//	@Test(invocationCount = 1)
 	public void testCancelLast() throws Exception, IOException, InterruptedException {
 
 		List<String> saleResult = performSaleTransaction(amount);
@@ -114,7 +102,7 @@ public class TC_TestCases extends BaseClass {
 
 	}
 
-	@Test(invocationCount = 1)
+//	@Test(invocationCount = 1)
 	public void testSale() throws Exception, IOException, InterruptedException {
 
 		performSaleTransaction(amount);

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="reporting.Setup" />
+	</listeners>
+	<test thread-count="1" name="Test">
+		<classes>
+			<!--  Comment out the 3 Classes for the Testing  -->
+
+			<class name="testcases.TC_US_RefundOfSale" />
+			<class name="testcases.TC_US_VoidOfSale" />
+			<class name="testcases.TC_US_VoidOfRefundWithoutSale" />
+			<class name="testcases.TC_GiftCard" />
+
+
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->          

@@ -44,59 +44,66 @@ public class LogResponse {
 		return null;
 	}
 
-	public List<String> print_Response(String trans, String[] parameters) {
-	    List<String> response = new ArrayList<>();
-	    
-	    for (int i = 0; i < parameters.length; i++) {
-	        String responseParameter = getParameterValue(parameters[i]);
-	        if (i == 15 && trans.contains("Sale")) {
-	            responseParameter = getAIDContent();
-	        }
-	        response.add(responseParameter);
-	    }
+	public List<String> print_Response(String trans, String[] parameters, String CardToken) {
+		List<String> response = new ArrayList<>();
 
-	    String transactionType = response.get(4);
-	    if(transactionType.equals(null)) {
-	    	transactionType = "GCB";
-	    	System.out.println("This is a GCB Request");
-	    }
-	    switch (transactionType) {
-	        case "1":
-	        case "21":
-	            System.out.print("Sale" + " : ");
-	            System.out.println(response);
-	            response.add(1, "Sale");
-	         
-	            break;
-	        case "2":
-	        case "22":
-	            System.out.print("Refund" + " : ");
-	            System.out.println(response);
-	            response.add(1, "Refund");
-	            break;
-	        case "5":
-	            System.out.print("Void" + " : ");
-	            System.out.println(response);
-	            response.add(1, "Void");
-	            break;
-	        case "91":
-	        	System.out.print("Check Sale" + " : ");
-	        	System.out.println(response);
-	        	response.add(1, "Check Sale");
-	        	break;
-	        case "GCB":
-	        	System.out.print("GCB" + " : ");
-	        	System.out.println(response);
-	        	response.add(1, "GCB");
-	        	break;
-	        default:
-	            System.out.print("Aurus" + " : ");
-	            System.out.println(response);
-	            response.add(1, "Aurus");
-	            break;
-	    }
+		for (int i = 0; i < parameters.length; i++) {
+			String responseParameter = getParameterValue(parameters[i]);
+			if (i == 15 && trans.contains("Sale")) {
+				responseParameter = getAIDContent();
+			}
+			response.add(responseParameter);
+		}
 
-	    return response;
+		String transactionType = response.get(4);
+		if (transactionType.equals(null)) {
+			transactionType = "GCB";
+			System.out.println("This is a GCB Request");
+		}
+		switch (transactionType) {
+		case "1":
+		case "21":
+			System.out.print("Sale" + " : ");
+			System.out.println(response);
+			response.add(1, "Sale");
+
+			break;
+		case "2":
+		case "22":
+			if (CardToken == null || CardToken.equalsIgnoreCase("null")) {
+			    System.out.print("Refund" + " : ");
+			    System.out.println(response);
+			    response.add(1, "Refund");
+			} else {
+			    System.out.print("Refund Without Sale" + " : ");
+			    System.out.println(response);
+			    response.add(1, "Refund Without Sale");
+			}
+			break;
+
+		case "5":
+			System.out.print("Void" + " : ");
+			System.out.println(response);
+			response.add(1, "Void");
+			break;
+		case "91":
+			System.out.print("Check Sale" + " : ");
+			System.out.println(response);
+			response.add(1, "Check Sale");
+			break;
+		case "GCB":
+			System.out.print("GCB" + " : ");
+			System.out.println(response);
+			response.add(1, "GCB");
+			break;
+		default:
+			System.out.print("Aurus" + " : ");
+			System.out.println(response);
+			response.add(1, "Aurus");
+			break;
+		}
+
+		return response;
 	}
 
 	public List<String> cardData() {

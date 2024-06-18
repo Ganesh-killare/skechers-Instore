@@ -24,11 +24,16 @@ public class ExtentReportManager {
 
 		ExtentReports extentReports = new ExtentReports();
 		extentReports.attachReporter(extentSparkReporter);
-		extentReports.setSystemInfo("Application", "AESDK Version 6.14.9");
+		extentReports.setSystemInfo("AESDK Version", "5.0.8.981");
+		extentReports.setSystemInfo("CCT Version", "24.02.022.001");
+		extentReports.setSystemInfo("Device Type", "Lane 7000");
+		extentReports.setSystemInfo("Corp ID ", "23031");
+		extentReports.setSystemInfo("Store ID", "06601");
+		extentReports.setSystemInfo("Terminal ID ", "80068467");
 		extentReports.setSystemInfo("Operating System", System.getProperty("os.name"));
 		extentReports.setSystemInfo("User Name", System.getProperty("user.name"));
-		extentReports.setSystemInfo("Environemnt", "UAT");
-		extentReports.setSystemInfo("user", "Ganesh Killare");
+		extentReports.setSystemInfo("Environemnt", "Production ");
+		extentReports.setSystemInfo("Quality Analyst", "Ganesh Killare");
 		return extentReports;
 	}
 
@@ -51,7 +56,7 @@ public class ExtentReportManager {
 	}
 
 	public static void logInfoDetails(String log) {
-		Setup.extentTest.get().info(MarkupHelper.createLabel(log, ExtentColor.PINK));
+		Setup.extentTest.get().info(MarkupHelper.createLabel(log, ExtentColor.TRANSPARENT));
 	}
 	public static void logInfoCardDetails(String log) {
 		Setup.extentTest.get().info(MarkupHelper.createLabel(log, ExtentColor.PURPLE));
@@ -70,7 +75,7 @@ public class ExtentReportManager {
 	}
 
 	public static void logJSONDetails(String log) {
-		Setup.extentTest.get().info(MarkupHelper.createCodeBlock(log, CodeLanguage.JSON));
+		Setup.extentTest.get().info(MarkupHelper.createCodeBlock(log, CodeLanguage.XML));
 	}
 
 

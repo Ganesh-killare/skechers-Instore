@@ -15,6 +15,7 @@ import java.util.regex.Pattern;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.FillPatternType;
 import org.apache.poi.ss.usermodel.Font;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.ss.usermodel.Row;
@@ -24,10 +25,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import base.BaseClass;
 import responsevalidator.LogResponse;
-import responsevalidator.Response_Parameters;
 
 // This class calculates transaction time
-public class LogsParserAdvance extends BaseClass {
+public class LogsParserAdvance extends BaseClass {   
 
 	private String ReqOfPOS = " <TransRequest>  <POSID>"; // " Request Received From POS :";
 	private String ResOfPOS = " <TransResponse><POSID>";// " POS response sent successfully.";
@@ -44,27 +44,47 @@ public class LogsParserAdvance extends BaseClass {
 	private Workbook workbook;
 	private Sheet sheet;
 
-	public static void main(String[] args) throws Exception {
-		LogsParserAdvance lp = new LogsParserAdvance();
+	public static void main(String[] args) throws Exception {   
+		LogsParserAdvance lp = new LogsParserAdvance(); 
 		lp.setupWorkBook();
 		lp.parseLogFile(LOG_FILE_PATH);
-		lp.saveExcelFile("LogTransactions");
+		lp.saveExcelFile("LogTransactions");   
 	}
 
 	private void setupWorkBook() {   
 		workbook = new XSSFWorkbook();
-		sheet = workbook.createSheet("Transactions");  
+		sheet = workbook.createSheet("Transactions");     
 		createHeaderRow();
 	}
 
 	private void createHeaderRow() {
-		Row headerRow = sheet.createRow(0);
-		List<String> headers = new ArrayList<>(Arrays.asList(parameters));
-		headers.add(1, "TransactionType");
-		for (int i = 0; i < headers.size(); i++) {
-			Cell headerCell = headerRow.createCell(i);
-			headerCell.setCellValue(headers.get(i));
-		}
+	    // Create a header row
+	    Row headerRow = sheet.createRow(0);
+
+	    // Create a list of headers
+	    List<String> headers = new ArrayList<>(Arrays.asList(parameters));    
+	    headers.add(1, "TransactionType");
+	    headers.add("Total Sale Time ");
+
+	    // Create a cell style for the header
+	    CellStyle headerStyle = workbook.createCellStyle();
+    
+	    // Set the background color to dark green
+	    headerStyle.setFillForegroundColor(IndexedColors.DARK_GREEN.getIndex());
+	    headerStyle.setFillPattern(FillPatternType.SOLID_FOREGROUND);  
+
+	    // Create a font and set the font color to white
+	    Font font = workbook.createFont();
+	    font.setColor(IndexedColors.WHITE.getIndex());
+	    font.setBold(true);   
+	    headerStyle.setFont(font);
+
+	    // Apply the style to each header cell
+	    for (int i = 0; i < headers.size(); i++) {
+	        Cell headerCell = headerRow.createCell(i);
+	        headerCell.setCellValue(headers.get(i));
+	        headerCell.setCellStyle(headerStyle);
+	    }
 	}
 
 	private void parseLogFile(String logFilePath) throws Exception {
@@ -93,10 +113,10 @@ public class LogsParserAdvance extends BaseClass {
 						} else if (messageType.equals(ResOfPOS) || messageType.equals(ResOfPED)) {
 							if (requestReceivedTimestamp != null) {
 								String Response = extractRequestType(line);
-								String duration = Duration.between(requestReceivedTimestamp, timestamp).toString();
+								String duration = formatTime(Duration.between(requestReceivedTimestamp, timestamp).toString());
 								processTransaction(Response, cardToken, duration);
 								System.out.println(duration);
-								requestReceivedTimestamp = null;
+								requestReceivedTimestamp = null;  
 							}
 						}
 					}
@@ -111,10 +131,9 @@ public class LogsParserAdvance extends BaseClass {
 	private void processTransaction(String response, String cardToken, String diff) throws Exception {
 		LogResponse SaleParam = new LogResponse(response);
 
-		List<String> saleData = SaleParam.print_Response(" Sale  ", parameters);
+		List<String> saleData = SaleParam.print_Response(" Sale  ", parameters , cardToken);
 	
 		saleData.set(0, cardToken);
-		//saleData.remove(3);   
 
 		saleData.add(diff);   
 	
@@ -148,6 +167,23 @@ public class LogsParserAdvance extends BaseClass {
 	 * (endIndex == -1) { endIndex = line.length(); } return line.substring(131,
 	 * endIndex); //return ""; }
 	 */
+	
+	
+	public String formatTime(String timeString) {
+	    // Check if the input string is not null and starts with "PT"
+	    if (timeString != null && timeString.startsWith("PT")) {
+	        // Extract the numeric part of the time string
+	        String numericPart = timeString.substring(2, timeString.length() - 1);
+	        
+	        // Convert the numeric part to seconds
+	        double seconds = Double.parseDouble(numericPart);
+	        
+	        // Return the formatted time string
+	        return String.format("%.3f sec", seconds);
+	    } else {
+	        return "Invalid time format";
+	    }
+	}
 
 	private String extractRequestType(String line) {
 		int startIndex = line.indexOf('<');
@@ -223,7 +259,7 @@ public class LogsParserAdvance extends BaseClass {
 
 	private void saveExcelFile(String fileName) {
 		try (FileOutputStream outputStream = new FileOutputStream(
-				"./transactionsXLfiles\\" + Utils.setFileName(fileName))) {
+				"./transactionsXLfiles\\" + Utils.setFileName(fileName))) {  
 			workbook.write(outputStream);
 			System.out.println("=".repeat(150));
 		} catch (IOException e) {

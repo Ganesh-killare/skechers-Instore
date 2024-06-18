@@ -24,7 +24,7 @@ import utilities.Utils;
 public class TC_WarDeployment extends BaseClass {
 	static List<String> amount;
 	String FILE_NAME = "_SkechersWarTesting";
-	P_XL_Utility vXL = new P_XL_Utility();  
+	P_XL_Utility vXL = new P_XL_Utility();
 	public static int DecisionVar;
 
 	@BeforeMethod
@@ -33,14 +33,14 @@ public class TC_WarDeployment extends BaseClass {
 		String ticketRequest = TicketDisplay.request();
 		sendRequestToAESDK(ticketRequest);
 		// System.out.println(ticketRequest);
-		amount = (List<String>) TicketDisplay.getTransactionAmount(ticketRequest);      
+		amount = (List<String>) TicketDisplay.getTransactionAmount(ticketRequest);
 
 		receiveResponseFromAESDK();
 
 	}
 
-	@Test(invocationCount = 30, priority = 1)
-	public void testSale() throws Exception, IOException, InterruptedException {     
+	@Test(invocationCount = 36, priority = 1)
+	public void testSale() throws Exception, IOException, InterruptedException {   
 
 		String gcbRequest = GCB.Request(amount.get(2));
 		// System.out.println(gcbRequest);
@@ -52,7 +52,8 @@ public class TC_WarDeployment extends BaseClass {
 		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
 		xl.WriteGCBData(GCB_Parameters, gcbParameters);
 		String result = GCBPrameter.getParameterValue("ResponseText");
-		String CardName = GCBPrameter.getParameterValue("FirstName") + "  " + GCBPrameter.getParameterValue("CardToken") ;
+		String CardName = GCBPrameter.getParameterValue("FirstName") + "  "
+				+ GCBPrameter.getParameterValue("CardToken");
 
 		if (result.equalsIgnoreCase("APPROVAL") || result.equalsIgnoreCase("VALIDATION")) {
 
@@ -73,15 +74,15 @@ public class TC_WarDeployment extends BaseClass {
 			String ATransactionID = SaleParam.getParameterValue("TransactionIdentifier");
 			String Amount = SaleParam.getParameterValue("TransactionAmount");
 
-			
-			  if (DecisionVar % 2 == 0) { List<String> data = Arrays.asList(ATransactionID,
-			  ATicketNumber, Amount, "06", CardName); vXL.writeDataForVoid(data);
-			  
-			  } else { List<String> data = Arrays.asList(ATransactionID, ATicketNumber,
-			  Amount, "02", CardName); vXL.writeDataForVoid(data);
-			  
-			  }
-			 
+			if (DecisionVar % 2 == 0) {
+				List<String> data = Arrays.asList(ATransactionID, ATicketNumber, Amount, "06", CardName);
+				vXL.writeDataForVoid(data);
+
+			} else {
+				List<String> data = Arrays.asList(ATransactionID, ATicketNumber, Amount, "02", CardName);
+				vXL.writeDataForVoid(data);
+
+			}
 
 			Assert.assertEquals("APPROVAL", SaleParam.getParameterValue("ResponseText"));
 			DecisionVar++;
@@ -90,15 +91,10 @@ public class TC_WarDeployment extends BaseClass {
 
 	}
 
-	@Test(priority = 2)
-	public void delayTime() throws InterruptedException {
-	
-	}
-
 	@Test(priority = 3, dataProvider = "VoidData", dataProviderClass = Utils.class)
 	public void testAllVoidTransactions(String TransID, String AurusPayTicketNumber, String amount, String transType,
 			String CardName) throws Exception {
-	
+
 		if (!amount.equalsIgnoreCase("0.00") && !amount.isEmpty()) {
 			System.out.println("We are performed Return of card " + CardName);
 
