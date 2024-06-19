@@ -6,14 +6,22 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testcases.TC_GiftCard">
+      <class name="testcases.TC_CAN_RefundOfSale">
         <methods>
+          <include name="beforeSuite"/>
+          <include name="TestCard14"/>
           <include name="ticketDisplay"/>
-          <include name="testGiftActivation"/>
           <include name="afterTransactionsOparations"/>
-          <include name="ticketDisplayAndGetCardBin"/>
         </methods>
-      </class> <!-- testcases.TC_GiftCard -->
+      </class> <!-- testcases.TC_CAN_RefundOfSale -->
+      <class name="testcases.TC_CAN_VoidOfSale">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="TestCard14"/>
+          <include name="ticketDisplay"/>
+          <include name="afterTransactionsOparations"/>
+        </methods>
+      </class> <!-- testcases.TC_CAN_VoidOfSale -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

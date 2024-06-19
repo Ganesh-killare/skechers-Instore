@@ -23,7 +23,7 @@ import utilities.Utils;
 
 public class TC_GiftCard extends BaseClass {
 
-	static List<String> amount;
+
 	String FILE_NAME = "Gift_Skechers";
 
 

@@ -22,7 +22,9 @@ import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 
 import reporting.BaseReport;
 import requestbuilder.Close;
@@ -38,6 +40,12 @@ import utilities.TransactionXL;
 import utilities.Utils;
 
 public class BaseClass {
+	
+	
+	@BeforeSuite
+	public void beforeSuite() {
+		System.out.println("Reporting status : "+ConfigReader.isReportingEnabled());
+	}
 
 // Normal Use 
 
@@ -154,6 +162,9 @@ public class BaseClass {
 			xl.WriteGCBData(GCB_Parameters, gcbParameters);
 			gcbResult.add(GCBPrameter.getParameterValue("ResponseText"));
 			gcbResult.add(GCBPrameter.getParameterValue("CardToken"));
+			if(!gcbResult.get(0).equalsIgnoreCase(validationText) || !gcbResult.get(0).equalsIgnoreCase(approvalText) ) {
+				Thread.sleep(5000);
+			}
 
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -185,7 +196,7 @@ public class BaseClass {
 				// Reporting
 				
 				if(ConfigReader.isReportingEnabled()) {
-					System.out.println(ConfigReader.isReportingEnabled());
+				 
 				BaseReport.Transaction_Reporting(saleData, salerequest, saleResponse);
 				}
 				
@@ -241,7 +252,7 @@ public class BaseClass {
 
 				// Reporting
 				if(ConfigReader.isReportingEnabled()) {
-					System.out.println(ConfigReader.isReportingEnabled());
+				 
 				BaseReport.Transaction_Reporting(saleData, salerequest, saleResponse);
 				}
 				String transdata = Utils.convertListToString(saleData, ",");

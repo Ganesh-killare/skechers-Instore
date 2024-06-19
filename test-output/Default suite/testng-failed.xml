@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TC_GiftCard">
+      <class name="testcases.TC_CAN_RefundOfSale">
         <methods>
+          <include name="beforeSuite"/>
+          <include name="TestCard01"/>
           <include name="ticketDisplay"/>
-          <include name="testGiftActivation"/>
-          <include name="afterTransactionsOparations"/>
-          <include name="ticketDisplayAndGetCardBin"/>
         </methods>
-      </class> <!-- testcases.TC_GiftCard -->
+      </class> <!-- testcases.TC_CAN_RefundOfSale -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -6,13 +6,24 @@
 	</listeners>
 	<test thread-count="1" name="Test">
 		<classes>
-			<!--  Comment out the 3 Classes for the Testing  -->
+			<!--  For USA   
 
 			<class name="testcases.TC_US_RefundOfSale" />
 			<class name="testcases.TC_US_VoidOfSale" />
 			<class name="testcases.TC_US_VoidOfRefundWithoutSale" />
-			<class name="testcases.TC_GiftCard" />
-
+			<class name="testcases.TC_GiftCard" />   
+			
+			For - CANADA
+			
+			<class name="testcases.TC_CAN_RefundOfSale" />   
+			<class name="testcases.TC_CAN_VoidOfSale" />   
+			<class name="testcases.TC_CAN_VoidOfRefundWithoutSale" />     
+			
+			For United Kingdom  
+-->
+			<class name="testcases.TC_UK_RefundOfSale" />
+			<class name="testcases.TC_UK_VoidOfSale" />
+			<class name="testcases.TC_UK_VoidOfRefundWithoutSale" />
 
 		</classes>
 	</test> <!--
