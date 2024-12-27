@@ -19,19 +19,19 @@ import responsevalidator.Response_Parameters;
 
 public class TC_TestCases extends BaseClass {
 
-	
-	@Test(invocationCount = 2)
-	public void testRefundOfSale() throws Exception, IOException, InterruptedException {
-		 String methodName = new Exception().getStackTrace()[0].getMethodName();
-	        System.out.println("Method name: " + methodName);
+	@Test(invocationCount = 5)
+	public void testRefundOfSale() throws Exception, IOException, InterruptedException {   
+		String methodName = new Exception().getStackTrace()[0].getMethodName();
+		System.out.println("Method name: " + methodName);
 
 		try {
-		   
+
 			List<String> saleResult = performSaleTransaction(amount);
 
-			if (saleResult.get(0).equalsIgnoreCase(approvalText) || saleResult.get(0).equalsIgnoreCase(validationText)) {
+			if (saleResult.get(0).equalsIgnoreCase(approvalText)
+					|| saleResult.get(0).equalsIgnoreCase(validationText)) {
 
-		//		Thread.sleep(3000);
+				// Thread.sleep(3000);
 
 				performRefundTransaction(saleResult);
 			}
@@ -41,12 +41,16 @@ public class TC_TestCases extends BaseClass {
 
 	}
 
-	@Test(invocationCount = 1)
+	@Test(invocationCount = 5)
 	public void testVoidOfSale() throws Exception, IOException, InterruptedException {
+		String methodName = new Exception().getStackTrace()[0].getMethodName();
+		System.out.println("Method name: " + methodName);
+
 		try {
 			List<String> saleResult = performSaleTransaction(amount);
 
-			if (saleResult.get(0).equalsIgnoreCase(approvalText) || saleResult.get(0).equalsIgnoreCase(validationText)) {
+			if (saleResult.get(0).equalsIgnoreCase(approvalText)
+					|| saleResult.get(0).equalsIgnoreCase(validationText)) {
 
 				performVoidTransaction(saleResult);
 
@@ -60,10 +64,16 @@ public class TC_TestCases extends BaseClass {
 
 	@Test(invocationCount = 2)
 	public void testVoidOfRefundWithoutSale() throws Exception, IOException, InterruptedException {
+		
+		 String methodName = new Exception().getStackTrace()[0].getMethodName();
+	        System.out.println("Method name: " + methodName);
+
+		
 		try {
 			List<String> saleResult = performRefundWithoutSaleTransaction(amount);
 
-			if (saleResult.get(0).equalsIgnoreCase(approvalText) || saleResult.get(0).equalsIgnoreCase(validationText)) {
+			if (saleResult.get(0).equalsIgnoreCase(approvalText)
+					|| saleResult.get(0).equalsIgnoreCase(validationText)) {
 
 				performVoidTransaction(saleResult);
 
@@ -80,7 +90,7 @@ public class TC_TestCases extends BaseClass {
 
 		List<String> saleResult = performSaleTransaction(amount);
 
-		if (saleResult.get(0).equalsIgnoreCase(approvalText) || saleResult.get(0).equalsIgnoreCase(validationText)) {
+		if (saleResult.get(0).equalsIgnoreCase(approvalText) || saleResult.get(0).equalsIgnoreCase(validationText)) {   
 
 			PerformCancelLast(saleResult);
 
@@ -88,7 +98,7 @@ public class TC_TestCases extends BaseClass {
 
 	}
 
-	@Test()
+	//@Test()
 	public void testCheckTransactions() throws Exception, IOException, InterruptedException {
 
 		List<String> saleResult = performCheckSaleTransaction(amount);
@@ -96,6 +106,7 @@ public class TC_TestCases extends BaseClass {
 		if (saleResult.get(0).equalsIgnoreCase(approvalText) || saleResult.get(0).equalsIgnoreCase(validationText)) {
 
 			// Refund Transactions
+
 			performVoidTransaction(saleResult);
 
 		}

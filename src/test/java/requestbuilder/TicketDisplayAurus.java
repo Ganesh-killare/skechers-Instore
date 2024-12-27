@@ -37,7 +37,7 @@ public class TicketDisplayAurus {
 			// Modify the parameters
 			root.addContent(new Element("POSID").setText("01"));
 			root.addContent(new Element("APPID").setText("04"));
-			root.addContent(new Element("CCTID").setText("06"));
+			root.addContent(new Element("CCTID").setText("01"));
 			root.addContent(new Element("ClerkID").setText("111"));
 			root.addContent(new Element("DisplayFlag").setText("07"));
 			root.addContent(new Element("AllowCardReader").setText("Y"));

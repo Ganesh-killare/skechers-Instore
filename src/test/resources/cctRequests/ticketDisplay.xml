@@ -1,7 +1,7 @@
 <CCTTicketDisplayRequest>
   <POSID>01</POSID>
   <APPID>04</APPID>
-  <CCTID>06</CCTID>
+  <CCTID>01</CCTID>
   <ClerkID>111</ClerkID>
   <DisplayFlag>00</DisplayFlag>
   <AllowCardReader>Y</AllowCardReader>

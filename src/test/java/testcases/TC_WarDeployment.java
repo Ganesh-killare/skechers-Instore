@@ -39,7 +39,7 @@ public class TC_WarDeployment extends BaseClass {
 
 	}
 
-	@Test(invocationCount = 36, priority = 1)
+	@Test(invocationCount = 10, priority = 1)
 	public void testSale() throws Exception, IOException, InterruptedException {   
 
 		String gcbRequest = GCB.Request(amount.get(2));
@@ -79,16 +79,67 @@ public class TC_WarDeployment extends BaseClass {
 				vXL.writeDataForVoid(data);
 
 			} else {
-				List<String> data = Arrays.asList(ATransactionID, ATicketNumber, Amount, "02", CardName);
+				List<String> data = Arrays.asList(ATransactionID, ATicketNumber, Amount, "02", CardName);  
 				vXL.writeDataForVoid(data);
 
 			}
 
-			Assert.assertEquals("APPROVAL", SaleParam.getParameterValue("ResponseText"));
+			Assert.assertEquals( SaleParam.getParameterValue("ResponseText"), "APPROVAL");
 			DecisionVar++;
 
 		}
 
+	}
+	@Test(invocationCount = 5, priority = 2)
+	public void testRefundWithoutSale() throws Exception, IOException, InterruptedException {   
+		
+		String gcbRequest = GCB.Request(amount.get(2));
+		// System.out.println(gcbRequest);
+		sendRequestToAESDK(gcbRequest);
+		String gcbResponse = receiveResponseFromAESDK();
+		// System.out.println(gcbResponse);
+		
+		Response_Parameters GCBPrameter = new Response_Parameters(gcbResponse);
+		List<String> gcbParameters = GCBPrameter.print_Response("GCB", parameters);
+		xl.WriteGCBData(GCB_Parameters, gcbParameters);
+		String result = GCBPrameter.getParameterValue("ResponseText");
+		String CardName = GCBPrameter.getParameterValue("FirstName") + "  "
+				+ GCBPrameter.getParameterValue("CardToken");
+		
+		if (result.equalsIgnoreCase("APPROVAL") || result.equalsIgnoreCase("VALIDATION")) {
+			
+			String salerequest = Sale.refundRequest(GCBPrameter.getParameterValue("CardToken"), amount);
+			
+			sendRequestToAESDK(salerequest);
+			// System.out.println(salerequest);
+			String saleResponse = receiveResponseFromAESDK();
+			// System.out.println(saleResponse);
+			
+			// System.out.println(saleResponse);
+			
+			Response_Parameters SaleParam = new Response_Parameters(saleResponse);
+			List<String> saleData = SaleParam.print_Response(" Sale  ", parameters);
+			saleData.add(1, "Sale");
+			xl.writeTransactionData(saleData);
+			String ATicketNumber = SaleParam.getParameterValue("AurusPayTicketNum");
+			String ATransactionID = SaleParam.getParameterValue("TransactionIdentifier");
+			String Amount = SaleParam.getParameterValue("TransactionAmount");
+			
+			if (DecisionVar % 2 == 0) {
+				List<String> data = Arrays.asList(ATransactionID, ATicketNumber, Amount, "06", CardName);
+				vXL.writeDataForVoid(data);
+				
+			} else {
+				List<String> data = Arrays.asList(ATransactionID, ATicketNumber, Amount, "06", CardName);
+				vXL.writeDataForVoid(data);
+				
+			}
+			
+			Assert.assertEquals(SaleParam.getParameterValue("ResponseText"), "APPROVAL");
+			DecisionVar++;
+			
+		}
+		
 	}
 
 	@Test(priority = 3, dataProvider = "VoidData", dataProviderClass = Utils.class)

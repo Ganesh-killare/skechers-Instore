@@ -32,6 +32,7 @@ import requestbuilder.GCB;
 import requestbuilder.Return;
 import requestbuilder.Sale;
 import requestbuilder.TicketDisplay;
+import requestbuilder.TicketDisplayAurus;
 import responsevalidator.LogResponse;
 import responsevalidator.Response_Parameters;
 import utilities.ConfigReader;
@@ -66,10 +67,10 @@ public class BaseClass {
 	protected String approvalText = "APPROVAL";
 	protected String validationText = "VALIDATION";
 
-//	private String serverAddress = "10.190.10.205";
-	private String serverAddress = getHostIP();
+	private String serverAddress = "10.190.10.239";
+//	private String serverAddress = getHostIP();
 
-	private int serverPort = 15583;
+	private int serverPort = 8000;
 	PrintWriter out = null;
 	Socket socket = null;
 
@@ -135,7 +136,7 @@ public class BaseClass {
 	@BeforeMethod
 	public void ticketDisplay() throws Exception, IOException, InterruptedException {
 
-		String ticketRequest = TicketDisplay.request();
+		String ticketRequest = TicketDisplayAurus.request();
 		sendRequestToAESDK(ticketRequest);
 		// System.out.println(ticketRequest);
 		amount = (List<String>) TicketDisplay.getTransactionAmount(ticketRequest);

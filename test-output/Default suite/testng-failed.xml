@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TC_CAN_RefundOfSale">
+      <class name="testcases.TC_US_VoidOfRefundWithoutSale">
         <methods>
           <include name="beforeSuite"/>
-          <include name="TestCard01"/>
+          <include name="afterTransactionsOparations"/>
           <include name="ticketDisplay"/>
+          <include name="TestCard01"/>
         </methods>
-      </class> <!-- testcases.TC_CAN_RefundOfSale -->
+      </class> <!-- testcases.TC_US_VoidOfRefundWithoutSale -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

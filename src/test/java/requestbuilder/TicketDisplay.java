@@ -99,6 +99,7 @@ public class TicketDisplay {
    
         Element cctTicketDisplayRequest = new Element("CCTTicketDisplayRequest");
         cctTicketDisplayRequest.addContent(new Element("POSID").setText("01"));
+        cctTicketDisplayRequest.addContent(new Element("CCTID").setText("01"));
         cctTicketDisplayRequest.addContent(new Element("ADSDKSpecVer").setText("6.13.0"));
         cctTicketDisplayRequest.addContent(new Element("DisplayFlag").setText("07"));
         cctTicketDisplayRequest.addContent(new Element("AllowCardReader").setText("N"));
